@@ -1,0 +1,14 @@
+cd mapp/
+ls
+source ../env/bin/activate
+alias pydoc="python -m pydoc"
+django-admin -h
+django-admin -h
+python manage.py -h
+python manage.py startapp resource
+ls
+mv resources/ maps/
+ls
+ls maps/
+screen
+exit

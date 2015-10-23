@@ -1,0 +1,57 @@
+;; Object fixtures/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "fixtures/"
+  :tables
+  (list
+    (semanticdb-table "maps_script.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("maps.locations.models" include nil nil [1 57])
+            ("maps.locations.json_views" include nil nil [58 110])
+            ("django.conf" include nil nil [111 143])
+            ("maps.data_import.models" include nil nil [144 196])
+            ("maps.data_import.admin_view" include nil nil [197 272])
+            ("maps.data_import.serializers" include nil nil [273 334])
+            ("os" include nil nil [335 344])
+            ("datetime" include nil nil [345 360])
+            ("shutil" include nil nil [361 374])
+            ("move_files" function nil nil [377 1047])
+            ("create_location_type" function nil nil [1049 2484])
+            ("create_location_type_iconed" function nil nil [2486 3973])
+            ("create_location" function nil nil [3975 9333])
+            ("create_data_import" function nil nil [10341 12691]))          
+      :file "maps_script.py"
+      :pointmax 12691
+      :fsize 12690
+      :lastmodtime '(22056 24259 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "script.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("json" include nil nil [25 36])
+            ("os" include nil nil [37 46])
+            ("django.contrib.sites.models" include nil nil [48 92])
+            ("django.db.models.loading" include nil nil [93 139])
+            ("mongoengine.queryset" include nil nil [141 202])
+            ("admin.models" include nil nil [204 247])
+            ("admin.models" include nil nil [248 286])
+            ("user.models" include nil nil [288 319])
+            ("maps.users.models" include nil nil [320 359])
+            ("maps.locations.models" include nil nil [360 406])
+            ("shop.models" include nil nil [407 438])
+            ("maps.custom_form.models" include nil nil [439 485])
+            ("user_type_fixtures" function nil nil [488 5050])
+            ("create_site" function nil nil [5052 5196])
+            ("create_usstates" function nil nil [5198 5410])
+            ("create_forum_object" function nil nil [5412 5528])
+            ("create_store_settings_object" function nil nil [5530 5925])
+            ("create_moderation_settings_object" function nil nil [5927 6018])
+            ("create_location_types" function nil nil [6020 6638]))          
+      :file "script.py"
+      :pointmax 6686
+      :fsize 6685
+      :lastmodtime '(22042 5292 0 0)
+      :unmatched-syntax nil))
+  :file "!Volumes!Other!softworks!hawaii!hawaii-djangoshop!djangoshop!fixtures!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

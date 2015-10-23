@@ -1,0 +1,491 @@
+;; Object locations/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "locations/"
+  :tables
+  (list
+    (semanticdb-table "json_views.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("rest_framework" include nil nil [1 34])
+            ("mongoengine.errors" include nil nil [35 80])
+            ("rest_framework.response" include nil nil [81 125])
+            ("rest_framework_mongoengine" include nil nil [126 182])
+            ("maps.custom_form.models" include nil nil [183 239])
+            ("maps.custom_form.serializers" include nil nil [240 321])
+            ("maps.locations.serializers" include nil nil [322 403])
+            ("maps.locations.serializers" include nil nil [404 497])
+            ("maps.locations.models" include nil nil [498 554])
+            ("maps.categories.models" include nil nil [555 610])
+            ("pygeocoder" include nil nil [611 642])
+            ("geojson" include nil nil [643 668])
+            ("django.conf" include nil nil [669 701])
+            ("requests" include nil nil [702 717])
+            ("rest_framework.decorators" include nil nil [718 764])
+            ("maps.core" include nil nil [765 790])
+            ("itertools" include nil nil [791 818])
+            ("json" include nil nil [819 830])
+            ("collections" include nil nil [831 849])
+            ("operator" include nil nil [850 865])
+            ("utils" include nil nil [866 906])
+            ("django.http" include nil nil [907 943])
+            ("bson" include nil nil [944 970])
+            ("mappweb.templatetags.mapp_tags" include nil nil [971 1030])
+            ("maps.core.views" include nil nil [1031 1070])
+            ("" code nil nil [1083 1092])
+            ("get_map_point" function (:arguments 
+              ( ("request" variable nil (reparse-symbol function_parameters) [1111 1118])
+                ("id" variable nil (reparse-symbol function_parameters) [1120 1122]))              ) nil [1093 1253])
+            ("" code nil nil [1264 1273])
+            ("get_map_points" function
+               (:documentation "build the custom format that google maps wants"
+                :arguments 
+                  ( ("request" variable nil (reparse-symbol function_parameters) [1293 1300]))                  )
+                nil [1274 1740])
+            ("build_geojson_for_googlemaps" function
+               (:documentation "pass in a iterable of locations
+    or location like data... i.e. external data imports
+    this function attempts to convert whatever has a close enough format
+    skipping over anything that doesn't have the correct properties"
+                :arguments 
+                  ( ("locs" variable nil (reparse-symbol function_parameters) [1775 1779]))                  )
+                nil [1742 4712])
+            ("MapSearch" type
+               (:superclasses ("Mongo.MongoAPIView")
+                :members 
+                  ( ("get" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4764 4768])
+                            ("request" variable nil (reparse-symbol function_parameters) [4770 4777])
+                            ("args" variable nil (reparse-symbol function_parameters) [4779 4784])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [4786 4794]))                          )
+                        (reparse-symbol indented_block_body) [4756 6337]))                  
+                :type "class")
+                nil [4714 6337])
+            ("AddLocation" type
+               (:superclasses ("Mongo.ListCreateAPIView")
+                :members 
+                  ( ("get" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6396 6400])
+                            ("request" variable nil (reparse-symbol function_parameters) [6402 6409])
+                            ("args" variable nil (reparse-symbol function_parameters) [6411 6416])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [6418 6426]))                          )
+                        (reparse-symbol indented_block_body) [6388 6480])
+                    ("pre_save" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6498 6502])
+                            ("obj" variable nil (reparse-symbol function_parameters) [6504 6507]))                          )
+                        (reparse-symbol indented_block_body) [6485 6953])
+                    ("post" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6967 6971])
+                            ("request" variable nil (reparse-symbol function_parameters) [6973 6980])
+                            ("args" variable nil (reparse-symbol function_parameters) [6982 6987])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [6989 6997]))                          )
+                        (reparse-symbol indented_block_body) [6958 7388])
+                    ("post_save" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7420 7424])
+                            ("obj" variable nil (reparse-symbol function_parameters) [7426 7429])
+                            ("created" variable nil (reparse-symbol function_parameters) [7431 7438]))                          )
+                        (reparse-symbol indented_block_body) [7406 7906])
+                    ("serializer_class" variable nil (reparse-symbol indented_block_body) [7911 7948])
+                    ("queryset" variable nil (reparse-symbol indented_block_body) [7953 7986])
+                    ("get_serializer_class" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8017 8021]))                          )
+                        (reparse-symbol indented_block_body) [7992 8208])
+                    ("get_paginate_by" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8233 8237]))                          )
+                        (reparse-symbol indented_block_body) [8213 8341]))                  
+                :type "class")
+                nil [6339 8341])
+            ("verify_address" function (:arguments 
+              ( ("data" variable nil (reparse-symbol function_parameters) [8362 8366]))              ) nil [8343 8780])
+            ("UpdateLocation" type
+               (:superclasses ("Mongo.RetrieveUpdateDestroyAPIView")
+                :members 
+                  ( ("serializer_class" variable nil (reparse-symbol indented_block_body) [8844 8881])
+                    ("queryset" variable nil (reparse-symbol indented_block_body) [8886 8919])
+                    ("get" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8933 8937])
+                            ("request" variable nil (reparse-symbol function_parameters) [8939 8946])
+                            ("args" variable nil (reparse-symbol function_parameters) [8948 8953])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [8955 8963]))                          )
+                        (reparse-symbol indented_block_body) [8925 9200])
+                    ("validate_tag" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9222 9226])
+                            ("t" variable nil (reparse-symbol function_parameters) [9228 9229]))                          )
+                        (reparse-symbol indented_block_body) [9205 9356])
+                    ("refresh_forms" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9379 9383])
+                            ("obj" variable nil (reparse-symbol function_parameters) [9385 9388]))                          )
+                        (reparse-symbol indented_block_body) [9361 11200])
+                    ("pre_save" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11226 11230])
+                            ("obj" variable nil (reparse-symbol function_parameters) [11232 11235]))                          )
+                        (reparse-symbol indented_block_body) [11213 11709])
+                    ("put" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11722 11726])
+                            ("request" variable nil (reparse-symbol function_parameters) [11728 11735])
+                            ("args" variable nil (reparse-symbol function_parameters) [11737 11742])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [11744 11752]))                          )
+                        (reparse-symbol indented_block_body) [11714 12161])
+                    ("post_save" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12180 12184])
+                            ("obj" variable nil (reparse-symbol function_parameters) [12186 12189])
+                            ("created" variable nil (reparse-symbol function_parameters) [12191 12198]))                          )
+                        (reparse-symbol indented_block_body) [12166 12622]))                  
+                :type "class")
+                nil [8782 12622])
+            ("create_org" function (:arguments 
+              ( ("request" variable nil (reparse-symbol function_parameters) [12639 12646])
+                ("obj" variable nil (reparse-symbol function_parameters) [12648 12651]))              ) nil [12624 13662])
+            ("AddLocationType" type
+               (:superclasses ("Mongo.ListCreateAPIView")
+                :members 
+                  ( ("serializer_class" variable nil (reparse-symbol indented_block_body) [13716 13757])
+                    ("queryset" variable nil (reparse-symbol indented_block_body) [13762 13799])
+                    ("custom_fields" variable nil (reparse-symbol indented_block_body) [13804 13824])
+                    ("taxonomies" variable nil (reparse-symbol indented_block_body) [13829 13846])
+                    ("get_serializer_class" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [13877 13881]))                          )
+                        (reparse-symbol indented_block_body) [13852 14072])
+                    ("post" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [14086 14090])
+                            ("request" variable nil (reparse-symbol function_parameters) [14092 14099])
+                            ("args" variable nil (reparse-symbol function_parameters) [14101 14106])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [14108 14116]))                          )
+                        (reparse-symbol indented_block_body) [14077 14710])
+                    ("post_save" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [14729 14733])
+                            ("obj" variable nil (reparse-symbol function_parameters) [14735 14738])
+                            ("created" variable nil (reparse-symbol function_parameters) [14740 14747]))                          )
+                        (reparse-symbol indented_block_body) [14715 15325])
+                    ("get_paginate_by" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [15350 15354]))                          )
+                        (reparse-symbol indented_block_body) [15330 15376]))                  
+                :type "class")
+                nil [13664 15376])
+            ("UpdateLocationType" type
+               (:superclasses ("Mongo.RetrieveUpdateDestroyAPIView")
+                :members 
+                  ( ("serializer_class" variable nil (reparse-symbol indented_block_body) [15444 15485])
+                    ("queryset" variable nil (reparse-symbol indented_block_body) [15490 15527])
+                    ("custom_fields" variable nil (reparse-symbol indented_block_body) [15532 15552])
+                    ("taxonomies" variable nil (reparse-symbol indented_block_body) [15557 15574])
+                    ("get" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [15588 15592])
+                            ("request" variable nil (reparse-symbol function_parameters) [15594 15601])
+                            ("args" variable nil (reparse-symbol function_parameters) [15603 15608])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [15610 15618]))                          )
+                        (reparse-symbol indented_block_body) [15580 15800])
+                    ("refresh_categories" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [15828 15832])
+                            ("obj" variable nil (reparse-symbol function_parameters) [15834 15837]))                          )
+                        (reparse-symbol indented_block_body) [15805 17122])
+                    ("put" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [17147 17151])
+                            ("request" variable nil (reparse-symbol function_parameters) [17153 17160])
+                            ("args" variable nil (reparse-symbol function_parameters) [17162 17167])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [17169 17177]))                          )
+                        (reparse-symbol indented_block_body) [17139 17809])
+                    ("post_save" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [17828 17832])
+                            ("obj" variable nil (reparse-symbol function_parameters) [17834 17837])
+                            ("created" variable nil (reparse-symbol function_parameters) [17839 17846]))                          )
+                        (reparse-symbol indented_block_body) [17814 18383]))                  
+                :type "class")
+                nil [15378 18383])
+            ("SaveLocationFormData" type
+               (:superclasses ("Mongo.ListCreateAPIView")
+                :members 
+                  ( ("serializer_class" variable nil (reparse-symbol indented_block_body) [18442 18479])
+                    ("queryset" variable nil (reparse-symbol indented_block_body) [18484 18517])
+                    ("location_id" variable nil (reparse-symbol indented_block_body) [18522 18540])
+                    ("post" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [18555 18559])
+                            ("request" variable nil (reparse-symbol function_parameters) [18561 18568])
+                            ("args" variable nil (reparse-symbol function_parameters) [18570 18575])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [18577 18585]))                          )
+                        (reparse-symbol indented_block_body) [18546 19510]))                  
+                :type "class")
+                nil [18385 19510])
+            ("LocationFormData" type
+               (:superclasses ("Mongo.GenericAPIView")
+                :members 
+                  ( ("get" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [19571 19575])
+                            ("request" variable nil (reparse-symbol function_parameters) [19577 19584])
+                            ("args" variable nil (reparse-symbol function_parameters) [19586 19591])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [19593 19601]))                          )
+                        (reparse-symbol indented_block_body) [19563 20279]))                  
+                :type "class")
+                nil [19512 20279])
+            ("LocationTypeFormData" type
+               (:superclasses ("Mongo.GenericAPIView")
+                :members 
+                  ( ("get" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [20344 20348])
+                            ("request" variable nil (reparse-symbol function_parameters) [20350 20357])
+                            ("args" variable nil (reparse-symbol function_parameters) [20359 20364])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [20366 20374]))                          )
+                        (reparse-symbol indented_block_body) [20336 21145]))                  
+                :type "class")
+                nil [20281 21145])
+            ("clean_point" function nil nil [21147 21491])
+            ("add_address" function (:arguments 
+              ( ("id" variable nil (reparse-symbol function_parameters) [21509 21511])
+                ("data" variable nil (reparse-symbol function_parameters) [21513 21517]))              ) nil [21493 21601])
+            ("get_claim_user" function (:arguments 
+              ( ("id" variable nil (reparse-symbol function_parameters) [21621 21623]))              ) nil [21602 21743])
+            ("locations_datatable" function (:arguments 
+              ( ("request" variable nil (reparse-symbol function_parameters) [21768 21775]))              ) nil [21744 24806]))          
+      :file "json_views.py"
+      :pointmax 24806
+      :fsize 24805
+      :lastmodtime '(22056 16039 0 0)
+      :unmatched-syntax '((INDENT_BLOCK 11689 . 11709) (NEWLINE 11688 . 11689) (COLON 11687 . 11688) (TRY 11611 . 11614) (AS 11683 . 11685) (INDENT_BLOCK 8741 . 8780) (NEWLINE 8740 . 8741) (COLON 8739 . 8740) (TRY 8373 . 8376) (AS 8735 . 8737) (INDENT_BLOCK 6933 . 6953) (NEWLINE 6932 . 6933) (COLON 6931 . 6932) (TRY 6855 . 6858) (AS 6927 . 6929) (NAME 2254 . 2265) (IF 2284 . 2286) (ELSE 2332 . 2336) (NAME 2194 . 2198) (IF 2210 . 2212) (ELSE 2234 . 2238)))
+    (semanticdb-table "models.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("datetime" include nil nil [1 16])
+            ("json" include nil nil [17 28])
+            ("mongoengine" include nil nil [29 56])
+            ("django.conf" include nil nil [57 89])
+            ("maps.categories.models" include nil nil [90 145])
+            ("maps.custom_form.serializers" include nil nil [146 209])
+            ("Location" type
+               (:superclasses ("mongo.Document")
+                :members 
+                  ( ("id" variable nil (reparse-symbol indented_block_body) [248 284])
+                    ("name" variable nil (reparse-symbol indented_block_body) [289 357])
+                    ("address1" variable nil (reparse-symbol indented_block_body) [362 422])
+                    ("city" variable nil (reparse-symbol indented_block_body) [427 483])
+                    ("state" variable nil (reparse-symbol indented_block_body) [488 545])
+                    ("zip" variable nil (reparse-symbol indented_block_body) [550 604])
+                    ("description" variable nil (reparse-symbol indented_block_body) [609 668])
+                    ("tags" variable nil (reparse-symbol indented_block_body) [673 713])
+                    ("phone" variable nil (reparse-symbol indented_block_body) [718 774])
+                    ("polygon" variable nil (reparse-symbol indented_block_body) [779 823])
+                    ("point" variable nil (reparse-symbol indented_block_body) [828 868])
+                    ("custom_field_form" variable nil (reparse-symbol indented_block_body) [873 943])
+                    ("created" variable nil (reparse-symbol indented_block_body) [948 1035])
+                    ("created_by" variable nil (reparse-symbol indented_block_body) [1040 1086])
+                    ("last_updated" variable nil (reparse-symbol indented_block_body) [1091 1182])
+                    ("also_editable_by" variable nil (reparse-symbol indented_block_body) [1187 1239])
+                    ("location_type" variable nil (reparse-symbol indented_block_body) [1245 1313])
+                    ("image" variable nil (reparse-symbol indented_block_body) [1318 1359])
+                    ("save" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1374 1378])
+                            ("args" variable nil (reparse-symbol function_parameters) [1380 1385])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [1387 1395]))                          )
+                        (reparse-symbol indented_block_body) [1365 1884])
+                    ("backend_form" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1906 1910]))                          )
+                        (reparse-symbol indented_block_body) [1889 2595])
+                    ("frontend_form" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2618 2622]))                          )
+                        (reparse-symbol indented_block_body) [2600 2875])
+                    ("taxonomies" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2895 2899]))                          )
+                        (reparse-symbol indented_block_body) [2880 3318])
+                    ("permission_type" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3357 3361]))                          
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [3323 3391])
+                    ("image_url" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3424 3428]))                          
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [3396 3542])
+                    ("image_url" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3583 3587])
+                            ("value" variable nil (reparse-symbol function_parameters) [3589 3594]))                          
+                        :decorators 
+                          ( ("image_url.setter" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [3547 3624])
+                    ("org" variable nil (reparse-symbol indented_block_body) [3629 3684])
+                    ("__init__" function
+                       (:suite 
+                          ( ("'''allow for settings points with the property setter from init'''" code nil (reparse-symbol indented_block_body) [3748 3814])
+                            ("super" code nil (reparse-symbol indented_block_body) [3824 3877])
+                            ("if" code nil (reparse-symbol indented_block_body) [3886 3930]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3703 3707])
+                            ("points" variable nil (reparse-symbol function_parameters) [3709 3715])
+                            ("args" variable nil (reparse-symbol function_parameters) [3722 3727])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [3729 3737]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [3690 3930])
+                    ("points" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3960 3964]))                          
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [3935 4025])
+                    ("points" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4060 4064])
+                            ("val" variable nil (reparse-symbol function_parameters) [4066 4069]))                          
+                        :decorators 
+                          ( ("points.setter" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [4030 4892])
+                    ("formatted_address" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4933 4937]))                          
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [4897 5278])
+                    ("group" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5307 5311]))                          
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [5283 5341])
+                    ("import_fields" function
+                       (:decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [5381 5384]))                          )
+                        (reparse-symbol indented_block_body) [5346 5613])
+                    ("required_import_fields" function
+                       (:decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [5662 5665]))                          )
+                        (reparse-symbol indented_block_body) [5618 5747]))                  
+                :type "class")
+                nil [212 5747])
+            ("LocationType" type
+               (:superclasses ("mongo.Document")
+                :members 
+                  ( ("id" variable nil (reparse-symbol indented_block_body) [5788 5824])
+                    ("name" variable nil (reparse-symbol indented_block_body) [5829 5897])
+                    ("desc" variable nil (reparse-symbol indented_block_body) [5902 5942])
+                    ("icon" variable nil (reparse-symbol indented_block_body) [5947 5987])
+                    ("allow_media" variable nil (reparse-symbol indented_block_body) [5992 6055])
+                    ("allow_galleries" variable nil (reparse-symbol indented_block_body) [6060 6127])
+                    ("allow_forms" variable nil (reparse-symbol indented_block_body) [6132 6195])
+                    ("allow_categories" variable nil (reparse-symbol indented_block_body) [6200 6268])
+                    ("taxonomies" variable nil (reparse-symbol indented_block_body) [6273 6338])
+                    ("view_privacy" variable nil (reparse-symbol indented_block_body) [6343 6411])
+                    ("custom_field_form" variable nil (reparse-symbol indented_block_body) [6416 6486])
+                    ("created" variable nil (reparse-symbol indented_block_body) [6491 6578])
+                    ("created_by" variable nil (reparse-symbol indented_block_body) [6583 6629])
+                    ("last_updated" variable nil (reparse-symbol indented_block_body) [6634 6726])
+                    ("icon_url" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6759 6763]))                          
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [6732 6875])
+                    ("location_count" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6913 6917]))                          
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [6880 7059])
+                    ("long_description" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7099 7103]))                          
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [7064 7189])
+                    ("group" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7218 7222]))                          
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [7194 7257]))                  
+                :type "class")
+                nil [5748 7257])
+            ("States" type
+               (:superclasses ("mongo.Document")
+                :members 
+                  ( ("name" variable nil (reparse-symbol indented_block_body) [7293 7362])
+                    ("code" variable nil (reparse-symbol indented_block_body) [7367 7444]))                  
+                :type "class")
+                nil [7259 7445]))          
+      :file "models.py"
+      :pointmax 7450
+      :fsize 7449
+      :lastmodtime '(22052 65110 0 0)
+      :unmatched-syntax '((RETURN 3975 . 3981) (IF 3993 . 3995) (ELSE 4007 . 4011) (FROM 1496 . 1500) (PERIOD 1501 . 1502)))
+    (semanticdb-table "serializers.py"
+      :file "serializers.py"
+      :fsize 1988
+      :lastmodtime '(21973 29576 0 0))
+    (semanticdb-table "views.py"
+      :file "views.py"
+      :fsize 2864
+      :lastmodtime '(22028 42891 0 0)))
+  :file "!Volumes!Other!softworks!hawaii!hawaii-mapp!mapp!maps!locations!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,32 @@
+;; Object mappweb/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "mappweb/"
+  :tables
+  (list
+    (semanticdb-table "urls.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("django.contrib" include nil nil [1 33])
+            ("django.conf.urls" include nil nil [34 85])
+            ("maps.data_import.admin_view" include nil nil [86 174])
+            ("maps.categories.urls" include nil nil [175 232])
+            ("maps.locations.urls" include nil nil [233 274])
+            ("maps.locations.urls" include nil nil [275 336])
+            ("maps.org.urls" include nil nil [337 389])
+            ("maps.org.urls" include nil nil [390 440])
+            ("django.conf" include nil nil [441 473])
+            ("django.conf.urls.static" include nil nil [474 516])
+            ("maps.users.urls" include nil nil [517 560])
+            ("maps.data_visualization.urls" include nil nil [561 630])
+            ("maps.users" include nil nil [631 659])
+            ("maps.resources.urls" include nil nil [660 727])
+            ("maps.resources.urls" include nil nil [728 784])
+            ("urlpatterns" code nil nil [786 3832]))          
+      :file "urls.py"
+      :pointmax 3833
+      :fsize 3832
+      :lastmodtime '(21973 29576 0 0)
+      :unmatched-syntax nil))
+  :file "!Volumes!Other!softworks!hawaii!hawaii-mapp!mapp!mappweb!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

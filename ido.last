@@ -1,0 +1,374 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/Volumes/Other/softworks/hawaii/hawaii-djangoshop/djangoshop/assets/js/libs/" . "angular/")
+ ("/Users/aaron/emacs.d/" . "settings/")
+ ("/Users/aaron/.zprezto/modules/prompt/" . "functions/")
+ ("/Users/aaron/.zprezto/modules/" . "prompt/")
+ ("/Users/aaron/.zprezto/" . "modules/")
+ ("/Volumes/Other/softworks/conad/" . "hawtmk.shp/")
+ ("/Volumes/Other/softworks/hawaii/hawaii-mapp/mapp/templates/maps-admin/settings/" . "partials/")
+ ("/Volumes/Other/softworks/hawaii/hawaii-djangoshop/djangoshop/user/landholder/" . "templatetags/")
+ ("/Volumes/Other/softworks/hawaii/hawaii-djangoshop/djangoshop/tests/unit/user/" . "landholder/")
+ ("/Volumes/Other/softworks/hawaii/hawaii-djangoshop/djangoshop/assets/js/maps-angular/components/" . "sysdata/")
+ ("/Volumes/Other/softworks/hawaii/hawaii-djangoshop/djangoshop/assets/js/maps-angular/" . "components/")
+ ("/Volumes/Other/tmp/endlessrunner/" . "img/")
+ ("/var/root/" . ".ssh/")
+ ("/var/" . "root/")
+ ("/Volumes/Other/softworks/hawaii/hawaii-mapp/mapp/maps/fixtures/management/" . "commands/")
+ ("/Users/aaron/.emacs.d/elpa/" . "flymake-easy/")
+ ("/Volumes/CoronaSDK/CoronaSDK/SampleCode/Physics/" . "HelloPhysics/")
+ ("/Volumes/CoronaSDK/CoronaSDK/SampleCode/" . "Physics/")
+ ("/Volumes/CoronaSDK/CoronaSDK/" . "SampleCode/")
+ ("/Volumes/CoronaSDK/" . "CoronaSDK/")
+ ("/Volumes/Other/softworks/codecraft/codecraft-biznaz/code/" . "codecraft/")
+ ("/Volumes/Other/softworks/codecraft/codecraft-biznaz/" . "code/")
+ ("/Volumes/Other/softworks/codecraft/" . "codecraft-biznaz/")
+ ("/Volumes/Other/softworks/hawaii/hawaii-mapp/mapp/templates/assets/js/plugin/" . "datatables/")
+ ("/Volumes/Other/softworks/hawaii/hawaii-mapp/templates/maps-admin/" . "locations/")
+ ("/Volumes/Other/softworks/hawaii/hawaii-mapp/templates/" . "assets/")
+ ("/Volumes/Other/softworks/hawaii/hawaii-djangoshop/djangoshop/templates/user/admin/" . "categories/")
+ ("/Volumes/Other/softworks/hawaii/hawaii-djangoshop/djangoshop/templates/user/buyer/" . "partials/")
+ ("/Volumes/Other/softworks/hawaii/hawaii-djangoshop/env/src/django/django/views/" . "generic/")
+ ("/Volumes/Other/softworks/hawaii/hawaii-djangoshop/env/src/django/django/" . "views/")
+ ("/Volumes/Other/softworks/hawaii/hawaii-djangoshop/env/src/django/" . "django/")
+ ("/Volumes/Other/softworks/hawaii/hawaii-djangoshop/djangoshop/assets/js/controllers/" . "landholder/")
+ ("/Volumes/Other/softworks/hawaii/hawaii-djangoshop/djangoshop/assets/js/" . "libs/")
+ ("/Volumes/Other/softworks/hawaii/hawaii-djangoshop/djangoshop/assets/" . "js/")
+ ("/Volumes/Other/softworks/hawaii/hawaii-djangoshop/djangoshop/templates/user/provider/" . "partials/")
+ ("/Volumes/Other/softworks/hawaii/hawaii-djangoshop/env/src/rest-framework-mongo/" . "rest_framework_mongoengine/")
+ ("/Volumes/Other/softworks/hawaii/hawaii-djangoshop/djangoshop/templates/user/" . "buyer/")
+ ("/Volumes/Other/softworks/hawaii/hawaii-djangoshop/djangoshop/templates/angular/" . "private_partials/")
+ ("/Volumes/Other/softworks/hawaii/hawaii-djangoshop/djangoshop/templates/" . "assets/")
+ ("/Volumes/Other/softworks/hawaii/hawaii-djangoshop/djangoshop/ratings/management/" . "commands/")
+ ("/Volumes/Other/softworks/hawaii/hawaii-djangoshop/djangoshop/user/" . "grower/")
+ ("/Volumes/Other/softworks/hawaii/hawaii-djangoshop/env/lib/python2.7/site-packages/mongoengine/" . "base/")
+ ("/Volumes/Other/softworks/hawaii/hawaii-djangoshop/env/src/maps/maps/" . "users/")
+ ("/Volumes/Other/softworks/hawaii/hawaii-djangoshop/env/src/maps/" . "maps/")
+ ("/Volumes/Other/softworks/hawaii/hawaii-djangoshop/env/src/" . "rest-framework-mongo/")
+ ("/Volumes/Other/softworks/hawaii/hawaii-djangoshop/djangoshop/ratings/" . "management/")
+ ("/Volumes/Other/softworks/hawaii/hawaii-djangoshop/env/lib/python2.7/site-packages/" . "rest_framework/")
+ ("/Volumes/Other/softworks/hawaii/hawaii-djangoshop/env/lib/python2.7/" . "site-packages/")
+ ("/Volumes/Other/softworks/hawaii/hawaii-djangoshop/env/lib/" . "python2.7/")
+ ("/Volumes/Other/softworks/hawaii/hawaii-djangoshop/env/" . "lib/")
+ ("/Volumes/Other/softworks/hawaii/hawaii-djangoshop/djangoshop/fixtures/management/" . "commands/")
+ ("/Volumes/Other/softworks/hawaii/hawaii-djangoshop/djangoshop/fixtures/" . "management/")
+ ("/Volumes/Other/softworks/hawaii/hawaii-djangoshop/djangoshop/tests/unit/" . "ratings/")
+ ("/Volumes/Other/softworks/hawaii/hawaii-djangoshop/djangoshop/tests/" . "unit/")
+ ("/Volumes/Other/softworks/hawaii/hawaii-djangoshop/djangoshop/" . "assets/")
+ ("/Volumes/Other/softworks/hawaii/hawaii-djangoshop/" . "djangoshop/")
+ ("/Volumes/Other/softworks/hawaii/hawaii-mapp/mapp/templates/maps-admin/resources/" . "partials/")
+ ("/Volumes/Other/softworks/hawaii/hawaii-mapp/env/src/rest-framework-mongo/" . "rest_framework_mongoengine/")
+ ("/Volumes/Other/softworks/hawaii/hawaii-mapp/env/src/" . "rest-framework-mongo/")
+ ("/Volumes/Other/softworks/hawaii/hawaii-mapp/env/lib/python2.7/site-packages/mongoengine/" . "base/")
+ ("/Volumes/Other/softworks/hawaii/hawaii-mapp/mapp/maps/fixtures/" . "location_type/")
+ ("/Volumes/Other/softworks/hawaii/hawaii-mapp/mapp/templates/assets/ngtemplates/sform/" . "builder/")
+ ("/Volumes/Other/softworks/hawaii/hawaii-mapp/mapp/templates/assets/ngtemplates/" . "sform/")
+ ("/Volumes/Other/softworks/hawaii/hawaii-mapp/mapp/templates/assets/js/angularjs/components/" . "sysdata/")
+ ("/Volumes/Other/softworks/hawaii/hawaii-mapp/mapp/templates/assets/js/angularjs/" . "controllers/")
+ ("/Volumes/Other/softworks/hawaii/hawaii-mapp/mapp/templates/assets/js/" . "angularjs/")
+ ("/Volumes/Other/softworks/hawaii/hawaii-mapp/mapp/templates/assets/" . "js/")
+ ("/Volumes/Other/softworks/CodeCraftRepo/pylearn/assets/js/" . "api/")
+ ("/Volumes/Other/softworks/CodeCraftRepo/website/" . "fonts/")
+ ("/Volumes/Other/softworks/CodeCraftRepo/" . "pylearn/")
+ ("/Volumes/Other/softworks/CodeCraftRepo/pylearn/assets/" . "js/")
+ ("/Volumes/Other/softworks/CodeCraftRepo/pylearn/apps/home/" . "static/")
+ ("/Volumes/Other/softworks/CodeCraftRepo/pylearn/apps/" . "home/")
+ ("/Volumes/Other/softworks/CodeCraftRepo/pylearn/" . "apps/")
+ ("/Volumes/Other/softworks/hawaii/hawaii-mapp/env/lib/python2.7/site-packages/" . "rest_framework/")
+ ("/Volumes/Other/softworks/hawaii/hawaii-mapp/env/lib/python2.7/" . "site-packages/")
+ ("/Volumes/Other/softworks/hawaii/hawaii-mapp/env/lib/" . "python2.7/")
+ ("/Volumes/Other/softworks/hawaii/hawaii-mapp/env/" . "src/")
+ ("/Volumes/Other/softworks/hawaii/hawaii-mapp/mapp/maps/tests/unit/" . "data_import/")
+ ("/Volumes/Other/softworks/hawaii/hawaii-mapp/mapp/maps/tests/" . "unit/")
+ ("/Volumes/Other/softworks/hawaii/hawaii-mapp/" . "mapp/")
+ ("/Users/aaron/" . ".emacs.d/")
+ ("/Volumes/Other/Downloads/data_viz/" . "data_viz/")
+ ("/Volumes/Other/Downloads/" . "data_viz/")
+ ("/Volumes/Other/softworks/hawaii/hawaii-mapp/mapp/" . "templates/")
+ ("/Volumes/Other/softworks/hawaii/hawaii-mapp/mapp/maps/" . "data_import/")
+ ("/Volumes/Other/Downloads/font-awesome-4.4.0/" . "fonts/")
+ ("/Volumes/Other/softworks/hawaii/hawaii-mapp/mapp/templates/maps-admin/" . "users/")
+ ("/Volumes/Other/softworks/hawaii/hawaii-mapp/mapp/templates/" . "assets/")
+ ("/Volumes/Other/softworks/hawaii/" . "hawaii-mapp/")
+ ("/Volumes/Other/softworks/" . "conad/")
+ ("/Volumes/Other/" . "softworks/")
+ ("/Volumes/" . "Other/")
+ ("/" . "Volumes/")
+ ("/Users/aaron/.emacs.d/" . "settings/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/Volumes/Other/softworks/hawaii/hawaii-djangoshop/djangoshop/assets/js/libs/angular/"
+ "/Volumes/Other/softworks/hawaii/hawaii-djangoshop/djangoshop/assets/js/"
+ "/Volumes/Other/softworks/hawaii/hawaii-djangoshop/djangoshop/homepage/"
+ "/Volumes/Other/softworks/hawaii/hawaii-djangoshop/djangoshop/sh/"
+ "/Volumes/Other/softworks/hawaii/hawaii-djangoshop/djangoshop/fixtures/"
+ "/Volumes/Other/softworks/hawaii/hawaii-djangoshop/djangoshop/user/"
+ "/Users/aaron/.emacs.d/"
+ "/Users/aaron/.emacs.d/snippets/python-mode/"
+ "/Users/aaron/.emacs.d/settings/"
+ "/Volumes/Other/softworks/hawaii/hawaii-djangoshop/djangoshop/templates/landing/"
+ "/Volumes/Other/softworks/hawaii/hawaii-mapp/mapp/templates/assets/js/angularjs/controllers/"
+ "/Volumes/Other/softworks/hawaii/hawaii-mapp/mapp/templates/assets/js/angularjs/components/"
+ "/Volumes/Other/softworks/conad/"
+ "/Volumes/Other/softworks/hawaii/hawaii-mapp/mapp/maps/data_import/"
+ "/Users/aaron/emacs.d/settings/"
+ "/Users/aaron/emacs.d/"
+ "/Users/aaron/.emacs.d/elpa/ecb/"
+ "/Users/aaron/org/"
+ "/Users/aaron/"
+ "/Volumes/Other/softworks/hawaii/hawaii-mapp/mapp/maps/fixtures/"
+ "/Volumes/Other/softworks/hawaii/hawaii-mapp/mapp/maps/fixtures/users/"
+ "/Users/aaron/.zprezto/modules/prompt/functions/"
+ "/Volumes/Other/softworks/hawaii/hawaii-mapp/mapp/maps/locations/"
+ "/Volumes/Other/softworks/hawaii/hawaii-mapp/mapp/templates/assets/js/libs/"
+ "/Volumes/Other/Downloads/data_viz/"
+ "/Volumes/Other/softworks/hawaii/hawaii-mapp/mapp/templates/maps-admin/settings/partials/"
+ "/Volumes/Other/softworks/hawaii/hawaii-mapp/mapp/templates/maps-admin/settings/"
+ "/Volumes/Other/softworks/conad/hawtmk.shp/"
+ "/Volumes/Other/softworks/hawaii/hawaii-mapp/mapp/mappweb/"
+ "/Volumes/Other/softworks/hawaii/hawaii-djangoshop/djangoshop/user/grower/"
+ "/Volumes/Other/softworks/hawaii/hawaii-djangoshop/djangoshop/user/landholder/"
+ "/Volumes/Other/softworks/hawaii/hawaii-djangoshop/djangoshop/user/templatetags/"
+ "/Volumes/Other/softworks/hawaii/hawaii-djangoshop/djangoshop/user/landholder/templatetags/"
+ "/Volumes/Other/softworks/hawaii/hawaii-djangoshop/djangoshop/tests/"
+ "/Volumes/Other/softworks/hawaii/hawaii-djangoshop/djangoshop/ratings/"
+ "/Volumes/Other/softworks/hawaii/hawaii-djangoshop/djangoshop/user/buyer/"
+ "/Volumes/Other/softworks/hawaii/hawaii-djangoshop/djangoshop/templates/user/buyer/partials/"
+ "/Volumes/Other/softworks/hawaii/hawaii-djangoshop/djangoshop/templates/user/buyer/"
+ "/Volumes/Other/softworks/hawaii/hawaii-djangoshop/djangoshop/ratings/templatetags/"
+ "/Volumes/Other/softworks/hawaii/hawaii-djangoshop/djangoshop/shop/"
+ "/Volumes/Other/softworks/hawaii/hawaii-djangoshop/djangoshop/templates/user/grower/"
+ "/Volumes/Other/softworks/hawaii/hawaii-djangoshop/env/lib/python2.7/site-packages/rest_framework/"
+ "/Volumes/Other/softworks/hawaii/hawaii-djangoshop/env/src/rest-framework-mongo/rest_framework_mongoengine/"
+ "/Volumes/Other/softworks/hawaii/hawaii-djangoshop/env/"
+ "/Volumes/Other/softworks/codecraft/codecraft-biznaz/code/"
+ "/Volumes/Other/softworks/hawaii/hawaii-djangoshop/djangoshop/templates/user/landholder/"
+ "/Volumes/Other/softworks/hawaii/hawaii-djangoshop/djangoshop/assets/js/maps-angular/components/sysdata/"
+ "/Volumes/Other/softworks/hawaii/hawaii-djangoshop/djangoshop/tests/unit/ratings/"
+ "/Volumes/Other/softworks/hawaii/hawaii-djangoshop/djangoshop/admin/"
+ "/Volumes/Other/softworks/hawaii/hawaii-djangoshop/djangoshop/assets/js/maps-angular/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "angular-google-maps.js"
+ "app-home.js"
+ "geoloc_views.py"
+ "views.py"
+ "urls.py"
+ "maps_script.py"
+ "script.py"
+ "models.py"
+ "init.el"
+ "pdb"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/Volumes/Other/softworks/hawaii/hawaii-djangoshop/djangoshop/assets/js/libs/angular/" (22055 46311 0 0) "ui-bootstrap.js" "checklist-model.js" "angular.js" "angular-summernote.js" "angular-route.min.js" "angular-google-maps.js" "../" "./")
+
+ ("/Volumes/Other/softworks/hawaii/hawaii-djangoshop/djangoshop/assets/js/libs/" (22055 46311 0 0) "lodash.js" "jquery/" "angular/" "../" "./")
+
+ ("/Volumes/Other/softworks/hawaii/hawaii-djangoshop/djangoshop/assets/js/" (22056 30550 0 0) "user/" "plugin/" "maps-angular/" "libs/" "landing/" "landholder/" "homepage/" "grower/" "controllers/" "app-user.js" "app-home.js" "admin/" ".DS_Store" "../" "./")
+
+ ("/Volumes/Other/softworks/hawaii/hawaii-djangoshop/djangoshop/assets/" (22055 47020 0 0) "xml/" "sound/" "php/" "ngtemplates/" "js/" "img/" "css/" "ajax/" "../" "./")
+
+ ("/Volumes/Other/softworks/hawaii/hawaii-djangoshop/djangoshop/templates/assets/" (21889 60668 0 0) "ajax/" "../" "./")
+
+ ("/Volumes/Other/softworks/hawaii/hawaii-djangoshop/djangoshop/templates/landing/" (22056 30466 0 0) "templatetags/" "search.html" "password_reset_confirm.html" "password_reset.html" "partials/" "left-panel.html" "home-help.html" "home-forums.html" "home-forums-post.html" "home-events.html" "home-events-page.html" "home-blog.html" "home-blog-entry.html" "header-menu.html" "footer.html" "base.html" "../" "./")
+
+ ("/Volumes/Other/softworks/hawaii/hawaii-djangoshop/env/lib/python2.7/site-packages/rest_framework/" (22001 13475 0 0) "viewsets.pyc" "viewsets.py" "views.pyc" "views.py" "utils/" "urls.pyc" "urls.py" "urlpatterns.pyc" "urlpatterns.py" "throttling.pyc" "throttling.py" "test.pyc" "test.py" "templatetags/" "templates/" "status.pyc" "status.py" "static/" "settings.pyc" "settings.py" "serializers.pyc" "serializers.py" "routers.pyc" "routers.py" "reverse.pyc" "reverse.py" "response.pyc" "response.py" "request.pyc" "request.py" "renderers.pyc" "renderers.py" "relations.pyc" "relations.py" "permissions.pyc" "permissions.py" "parsers.pyc" "parsers.py" "pagination.pyc" "pagination.py" "negotiation.pyc" "negotiation.py" "models.pyc" "models.py" "mixins.pyc" "mixins.py" "generics.pyc" "generics.py" "filters.pyc" "filters.py" "fields.pyc" "fields.py" "exceptions.pyc" "exceptions.py" "decorators.pyc" "decorators.py" "compat.pyc" "compat.py" "authtoken/" "authentication.pyc" "authentication.py" "__init__.pyc" "__init__.py" "../" "./")
+
+ ("/Volumes/Other/softworks/hawaii/hawaii-djangoshop/djangoshop/homepage/" (22056 29609 0 0) "views.pyc" "views.py" "urls.pyc" "urls.py" "tests.pyc" "geoloc_views.pyc" "geoloc_views.py" "forum_views.pyc" "forum_views.py" "event_views.pyc" "event_views.py" "blog_views.pyc" "blog_views.py" "__init__.pyc" "__init__.py" "../" "./")
+
+ ("/Volumes/Other/softworks/hawaii/hawaii-djangoshop/djangoshop/assets/js/homepage/" (22002 8964 0 0) "registermodal_controller.js" "loginmodal_controller.js" "landingpage_controller.js" "geolocationspage_controller.js~HEAD" "geolocationspage_controller.js" "aboutpage_controller.js~HEAD" "aboutpage_controller.js" "../" "./")
+
+ ("/Volumes/Other/softworks/hawaii/hawaii-djangoshop/djangoshop/admin/" (22016 51782 0 0) "warnings_views.pyc" "warnings_views.py" "views.pyc" "views.py" "users_views.pyc" "users_views.py" "urls.pyc" "urls.py" "stores_views.pyc" "stores_views.py" "settings_views.pyc" "settings_views.py" "serializers.pyc" "serializers.py" "models.pyc" "models.py" "migrations/" "forum_views.pyc" "forum_views.py" "event_views.pyc" "event_views.py" "category_views.pyc" "category_views.py" "blog_views.pyc" "blog_views.py" "apps.pyc" "apps.py" "__init__.pyc" "__init__.py" "../" "./")
+
+ ("/Volumes/Other/softworks/hawaii/hawaii-djangoshop/djangoshop/templates/user/landholder/" (22056 27253 0 0) "templatetags/" "subscriptions.html" "soilmates.html" "soilmate-request.html" "soilmate-browse.html" "profile.html" "matchmaking-settings.html" "locations.html" "left-panel.html" "dashboard.html" "addplot.html" "_addlocation.html" "../" "./")
+
+ ("/Volumes/Other/softworks/codecraft/codecraft-biznaz/code/" (22036 51505 0 0) "tower.pyc" "tower.py" "street.py" "mcpi/" "house.py" "codecraft/" "castle.pyc" "castle.py" "../" "./")
+
+ ("/Volumes/Other/softworks/hawaii/hawaii-djangoshop/djangoshop/user/landholder/" (22056 26871 0 0) "views.pyc" "views.py" "urls.pyc" "urls.py" "templatetags/" "serializers.pyc" "serializers.py" "models.pyc" "models.py" "migrations/" "forms.pyc" "__init__.pyc" "__init__.py" "../" "./")
+
+ ("/Volumes/Other/softworks/hawaii/hawaii-mapp/mapp/maps/data_import/" (22056 27042 0 0) "views.pyc" "views.py" "urls.pyc" "urls.py" "tasks.py" "serializers.pyc" "serializers.py" "models.pyc" "models.py" "admin_view.pyc" "admin_view.py" "__init__.pyc" "__init__.py" "../" "./")
+
+ ("/Volumes/Other/softworks/hawaii/hawaii-mapp/mapp/templates/assets/js/angularjs/controllers/" (22056 27096 0 0) "usertype_controller.js" "user_controller.js" "taxonomy_controller.js" "profile_controller.js" "org_controller.js" "locationtype_controller.js" "location_controller.js" "homepage_controller.js" "dataviz_controller.js" "category_controller.js" "../" "./")
+
+ ("/Users/aaron/.emacs.d/settings/" (22056 27338 0 0) "yasnippet-settings.el" "yaml-settings.el" "web-mode-settings.el" "scss-settings.el" "python-settings.el" "matlab-settings.el" "markdown-settings.el" "latex-settings.el" "js-settings.el" "helm-settings.el" "general-settings.el" "eval-in-repl-settings.el" "el-get-settings.el" "ecb-settings.el" "custom.el.before_ecb_2.40__2" "custom.el.before_ecb_2.40__1" "custom.el.before_ecb_2.40" "custom.el" "custom-functions.el" "corona-settings.el" "camelcase-settings.el" "auto-complete-settings.el" "../" "./")
+
+ ("/Users/aaron/.emacs.d/" (22056 22324 0 0) "tutorial/" "snippets/" "settings/" "semanticdb/" "recentf" "notes" "init.el" "ido.last" "eshell/" "elpa/" "el-get/" "ede-projects.el" "auto-save-list/" "anaconda-mode/" "ac-comphist.dat" ".python-environments/" "../" "./")
+
+ ("/Volumes/Other/softworks/hawaii/hawaii-djangoshop/djangoshop/user/" (22056 24074 0 0) "views.pyc" "views.py" "util.pyc" "util.py" "user_admin.pyc" "user_admin.py" "urls.pyc" "urls.py" "tests.pyc" "templatetags/" "tasks.pyc" "tasks.py" "subscription_views.pyc" "subscription_views.py" "serializers.pyc" "serializers.py" "provider/" "models.pyc" "models.py" "migrations/" "middleware.pyc" "middleware.py" "landholder/" "grower/" "forms.pyc" "buyer/" "api.pyc" "__init__.pyc" "__init__.py" "../" "./")
+
+ ("/Volumes/Other/softworks/hawaii/hawaii-djangoshop/djangoshop/fixtures/" (22056 24275 0 0) "usstate.json" "usertypes.json" "user.usertype.json" "shop.hawaiiisland.json" "shop.country.json" "script.pyc" "script.py" "market.market.json" "maps_script.pyc" "maps_script.py" "management/" "location_type/" "landholder_customforms.json" "growerprofile_customforms.json" "data_import/" "buyer_customforms.json" "basic_address_customforms.json" "__init__.pyc" "__init__.py" "../" "./")
+
+ ("/Volumes/Other/softworks/hawaii/hawaii-djangoshop/djangoshop/sh/" (22055 45761 0 0) "wsgi.pyc" "wsgi.py" "views.pyc" "views.py" "utils.pyc" "utils.py" "urls.pyc" "urls.py" "settings.pyc" "settings.py" "runner.pyc" "runner.py" "guitest_settings.pyc" "guitest_settings.py" "defaults.pyc" "defaults.py" "context_processors.pyc" "context_processors.py" "celery.pyc" "celery.py" "__init__.pyc" "__init__.py" "../" "./")
+
+ ("/Volumes/Other/softworks/hawaii/hawaii-djangoshop/" (21924 4286 0 0) "tests/" "test/" "kanit" "env/" "djangoshop/" "config.sublime-workspace" "config.sublime-project" "../" "./")
+
+ ("/Users/aaron/.emacs.d/snippets/python-mode/" (22056 21863 0 0) "pdb" "../" "./")
+
+ ("/Volumes/Other/softworks/hawaii/hawaii-djangoshop/djangoshop/" (22055 47829 0 0) "user/" "tests/" "templates/" "sub.py" "shop/" "shippable.yml" "sh/" "settings_local.pyc" "settings_local.py" "requirements.txt" "README.md" "ratings/" "pm/" "order/" "media/" "market/" "manage.py" "homepage/" "forum/" "fixtures/" "events/" "dummy.py" "core/" "config.yml" "categories/" "cart/" "blog/" "assets/" "ansible/" "admin/" "address/" ".gitignore" ".git/" ".ebextensions/" ".DS_Store" "../" "./")
+
+ ("/Volumes/Other/softworks/hawaii/hawaii-djangoshop/djangoshop/fixtures/management/" (21869 1995 0 0) "commands/" "__init__.pyc" "__init__.py" "../" "./")
+
+ ("/Users/aaron/.emacs.d/snippets/" (22056 20866 0 0) "python-mode/" "js-mode/" "../" "./")
+
+ ("/Volumes/Other/softworks/hawaii/hawaii-djangoshop/djangoshop/templates/user/" (22055 47410 0 0) "templatetags/" "provider/" "profile.html" "paginator.html" "newusertype.html" "messages.html" "left-panel.html" "landholder/" "grower/" "buyer/" "base.html" "admin/" "../" "./")
+
+ ("/Volumes/Other/softworks/hawaii/hawaii-djangoshop/djangoshop/assets/js/maps-angular/" (21925 15306 0 0) "v1.3.14/" "provider/" "directives/" "controllers/" "components/" "base-module.js" "app.js" "angular-sanitize.min.js.map" "angular-sanitize.min.js" ".DS_Store" "../" "./")
+
+ ("/Volumes/Other/softworks/hawaii/hawaii-djangoshop/djangoshop/assets/js/maps-angular/components/sysdata/" (22055 27533 0 0) "sysdata_factory.js" "../" "./")
+
+ ("/Volumes/Other/softworks/hawaii/hawaii-djangoshop/djangoshop/templates/user/grower/" (22055 27534 0 0) "templatetags/" "subscriptions.html" "soilmates.html" "soilmate-request.html" "soilmate-browse.html" "ribbon.html" "profile.html" "matchmaking-settings.html" "left-panel.html" "dashboard.html" "add-grower-profile.html" "../" "./")
+
+ ("/Volumes/Other/softworks/hawaii/hawaii-djangoshop/djangoshop/user/grower/" (22055 45763 0 0) "views.pyc" "views.py" "urls.pyc" "urls.py" "serializers.pyc" "serializers.py" "models.pyc" "models.py" "migrations/" "__init__.pyc" "__init__.py" "../" "./")
+
+ ("/Volumes/Other/softworks/hawaii/hawaii-mapp/mapp/maps/locations/" (22056 16041 0 0) "views.pyc" "views.py" "urls.pyc" "urls.py" "tests.pyc" "tests.py" "serializers.pyc" "serializers.py" "models.pyc" "models.py" "migrations/" "json_views.pyc" "json_views.py" "__init__.pyc" "__init__.py" "../" "./")
+
+ ("/Volumes/Other/softworks/hawaii/hawaii-djangoshop/djangoshop/fixtures/management/commands/" (22056 19992 0 0) "create_fixtures.pyc" "create_fixtures.py" "create_data.pyc" "create_data.py" "__init__.pyc" "__init__.py" ".#create_data.py" "#create_data.py#" "../" "./")
+
+ ("/Volumes/Other/softworks/hawaii/hawaii-djangoshop/djangoshop/templates/" (21916 61868 0 0) "user/" "pm/" "landing/" "emails/" "assets/" "angular/" "../" "./")
+
+ ("/Volumes/Other/softworks/hawaii/hawaii-mapp/mapp/templates/assets/js/angularjs/" (22053 65181 0 0) "v1.3.14/" "ui-bootstrap-tpls-0.12.1.min.js" "provider/" "directives/" "dataviz_controller.js" "controllers/" "components/" "base-module.js" "angular.min.js.map" "angular.min.js" "angular-sanitize.min.js.map" "angular-sanitize.min.js" "angular-route.min.js.map" "angular-route.min.js" ".DS_Store" "../" "./")
+
+ ("/Volumes/Other/softworks/hawaii/hawaii-mapp/mapp/templates/assets/js/" (21980 32154 0 0) "viz.js" "speech/" "smartwidgets/" "plugin/" "notification/" "maps-admin/" "libs/" "homepage.js" "ga.js" "demo.min.js" "bootstrap/" "app.min.js" "app.config.js" "angularjs/" "../" "./")
+
+ ("/Volumes/Other/softworks/hawaii/hawaii-mapp/mapp/templates/assets/" (21966 11136 0 0) "xml/" "sound/" "php/" "ngtemplates/" "js/" "img/" "css/" "ajax/" "../" "./")
+
+ ("/Volumes/Other/softworks/hawaii/hawaii-mapp/mapp/templates/" (21966 11136 0 0) "maps-admin/" "homepage/" "email/" "assets/" "../" "./")
+
+ ("/Users/aaron/.emacs.d/elpa/flymake-easy/" (22054 93 0 0) "flymake-easy.el" "flymake-easy-pkg.el" "flymake-easy-autoloads.el" "../" "./")
+
+ ("/Users/aaron/.emacs.d/elpa/" (22054 498 0 0) "wsd-mode-readme.txt" "s-20150924.406/" "restclient-readme.txt" "restclient-20150818.807/" "pythonic-20150730.216/" "popup-20150626.711/" "paredit/" "lua-mode-readme.txt" "lua-mode-20150804.2302/" "flymake-jslint-readme.txt" "flymake-jslint/" "flymake-easy/" "find-file-in-repository/" "f-20150605.927/" "eval-in-repl/" "dash-20150829.433/" "company-restclient-readme.txt" "auto-complete-20150618.1949/" "archives/" "anaconda-mode-readme.txt" "anaconda-mode-20150922.537/" "ac-html-readme.txt" "ac-anaconda-readme.txt" "ac-anaconda-20150912.108/" "abl-mode-readme.txt" "../" "./")
+
+ ("/Volumes/Other/softworks/hawaii/hawaii-mapp/mapp/maps/fixtures/" (22053 40560 0 0) "views.py" "users/" "tests.pyc" "tests.py" "script.pyc" "script.py" "models.pyc" "models.py" "migrations/" "management/" "location_type/" "data_import/" "admin.pyc" "admin.py" "__init__.pyc" "__init__.py" "../" "./")
+
+ ("/Volumes/Other/softworks/conad/" (22053 295 0 0) "test.geojson" "output1.json" "output.geojson" "hawtmk.shp.zip" "hawtmk.shp/" "HawaiiShapeData.ipynb" "future.geojson.zip" "future.geojson" "chunk_0.geojson" "chunk 0.geojson" ".ipynb_checkpoints/" ".DS_Store" ".#geoj.json" "#geoj.json#" "../" "./")
+
+ ("/Volumes/Other/softworks/hawaii/hawaii-mapp/mapp/" (22053 64787 0 0) "utils.pyc" "utils.py" "templates/" "shippable.yml" "setup.py" "requirements.txt" "README.md" "node_modules/" "media/" "maps/" "mappweb/" "MANIFEST.in" "manage.py" "db.sqlite3" "config.yml" "celerybeat-schedule" "build/" "__init__.pyc" "__init__.py" ".gitignore" ".git/" ".elasticbeanstalk/" ".ebextensions/" "../" "./")
+
+ ("/Users/aaron/" (22053 62824 0 0) "server.secure.key" "server.key" "server.csr" "server.crt" "screen-for-OSX/" "Public/" "Pictures/" "org/" "npm-debug.log" "nano.save" "Music/" "Movies/" "Library/" "jhamrick_dot_emacs/" "gnu-screen-vertsplit.patch" "fyp_amyatt_final.pdf" "fyp_amyatt_final.docx" "fyp_aaronmyatt_final.docx" "Envs/" "emacs.d/" "dump.rdb" "Dropbox/" "Downloads/" "Documents/" "Desktop/" "chart1.crtx" "ca.srl" "ca.key" "ca.crt" "Applications/" "anaconda/" "aaronskey.pem" "aaronmyatt_fyp_reformat.docx" ".zshrc.omz-uninstalled-20150428165737" ".zshrc-e" ".zshrc" ".zshenv" ".zsh_history" ".zsh-update" ".zprofile~" ".zprofile.pysave" ".zprofile" ".zpreztorc" ".zprezto/" ".zlogout" ".zlogin" ".zhistory" ".zcompdump.zwc" ".zcompdump-Aaron’s MacBook Pro-5.0.5" ".zcompdump" ".yolk/" ".w3m/" ".virtualenvs/" ".v8flags.3.14.5.9.aaron.json" ".Trash/" ".ssh/" ".screenrc1" ".screenrc" ".sawsrc" ".saws.log" ".saws-history" ".rnd" ".rediscli_history" ".pythonhist" ".python_history" ".pylint.d/" ".PyCharm40/" ".ptpython_history" ".ptpython/" ".psql_history" ".pip/" ".oracle_jre_usage/" ".npmrc" ".npm/" ".node-gyp/" ".netrc" ".mongorc.js" ".matplotlib/" ".local/" ".lesshst" ".jupyter/" ".ipython/" ".httpie/" ".history" ".hgignore_global" ".heroku/" ".gitignore_global" ".gitignore" ".gitconfig" ".gem/" ".enthought/" ".emacs~" ".emacs.d/" ".elasticbeanstalk/" ".DS_Store" ".dropbox/" ".dbshell" ".cups/" ".continuum/" ".config/" ".conda/" ".CFUserTextEncoding" ".cache/" ".bash_profile~" ".bash_profile.macports-saved_2015-01-06_at_21:41:48" ".bash_profile" ".bash_history" ".aws/" ".astropy/" ".android/" "#.bash_profile#" "../" "./")
+
+ ("/Volumes/Other/softworks/hawaii/hawaii-mapp/mapp/templates/assets/js/angularjs/components/" (22053 45510 0 0) "usertype_module.js" "userprofile_module.js" "user_module.js" "taxonomy_module.js" "sysdata/" "sform/" "resource_module.js" "organization_module.js" "category_module.js" "../" "./")
+
+ ("/Volumes/Other/softworks/hawaii/hawaii-mapp/" (22028 45425 0 0) "startup.conf~" "startup.conf" "mapp.sublime-workspace" "mapp.sublime-project" "mapp/" "kanit" "hardcopy.1" "env/" "dump.rdb" "data-visualizations.zip" "data-visualizations/" "data/" "businessdata.csv" ".DS_Store" ".#kanit" "../" "./")
+
+ ("/Users/aaron/.emacs.d/elpa/ac-anaconda-20150912.108/" (22051 34823 0 0) "ac-anaconda.elc" "ac-anaconda.el" "ac-anaconda-pkg.elc" "ac-anaconda-pkg.el" "ac-anaconda-autoloads.el" "../" "./")
+
+ ("/Volumes/Other/softworks/hawaii/hawaii-mapp/mapp/templates/maps-admin/settings/" (22051 1438 0 0) "settings.html" "settings-plugins.html" "settings-menus.html" "settings-importsystem.html" "settings-importfile.html" "settings-import.html" "partials/" "base.html" "__init__.py" "../" "./")
+
+ ("/Applications/" (22037 60952 0 0) "Xcode.app/" "VLC.app/" "Utilities/" "TotalTerminal.app/" "TorBrowser.app/" "Time Machine.app/" "TextEdit.app/" "TeamViewer.app/" "System Preferences.app/" "Sublime Text.app/" "Stickies.app/" "Steam.app/" "SourceTree.app/" "SofaPlay.app/" "SofaPlay Lite.app/" "Slack.app/" "Skype.app/" "SizeUp.app/" "Scrivener.app/" "Scratch 2.app/" "Scapple.app/" "Safari.app/" "Reminders.app/" "ReadCube.app/" "QuickTime Player.app/" "Quicksilver.app/" "PythonTurtle.app/" "Python 3.4/" "PyCharm.app/" "Preview.app/" "piskel.app/" "Photos.app/" "Photo Booth.app/" "OpenOffice.app/" "Notes.app/" "Mission Control.app/" "Minecraft.app/" "Microsoft Office 2011/" "Messages.app/" "Mendeley Desktop.app/" "Maps.app/" "Mail.app/" "LiveReload.app/" "Launchpad.app/" "Kivy.app/" "Kindle.app/" "iTunes.app/" "Image Capture.app/" "iBooks.app/" "Google Chrome.app/" "Google Chrome Canary.app/" "Gitter.app/" "GitHub.app/" "GIMP.app/" "Game Center.app/" "Font Book.app/" "Firefox.app/" "FaceTime.app/" "Emacs.app/" "DVD Player.app/" "Dropbox.app/" "Dictionary.app/" "Dashboard.app/" "Dash.app/" "CoronaSDK/" "Contacts.app/" "Chess.app/" "Calendar.app/" "Calculator.app/" "Business-in-a-Box/" "BitTorrent.app/" "Automator.app/" "App Store.app/" "Anki.app/" "Adobe/" ".localized" ".DS_Store" "../" "./")
+
+ ("/Users/aaron/.emacs.d/el-get/" (22050 35484 0 0) "yasnippet/" "yaml-mode/" "websocket/" "web-mode/" "tidy/" "scss-mode/" "request/" "python-environment/" "popup/" "nyan-mode/" "nxhtml/" "markdown-mode/" "magit/" "js2-mode/" "jedi/" "helm-descbinds/" "helm/" "fuzzy/" "epc/" "el-get/" "ein/" "ecb/" "deferred/" "dash/" "ctable/" "color-theme-solarized/" "color-theme/" "cl-lib/" "cedet/" "auto-complete/" "auctex/" ".status.el" ".loaddefs.elc" ".loaddefs.el" "../" "./")
+
+ ("/Users/aaron/emacs.d/settings/" (22050 34054 0 0) "yasnippet-settings.el" "yaml-settings.el" "web-mode-settings.el" "scss-settings.el" "python-settings.el" "matlab-settings.el" "markdown-settings.el" "latex-settings.el" "js-settings.el" "helm-settings.el" "general-settings.el" "eval-in-repl-settings.el" "el-get-settings.el" "custom.el" "custom-functions.el" "corona-settings.el" "camelcase-settings.el" "auto-complete-settings.el" "../" "./")
+
+ ("/Volumes/" (22050 32010 0 0) "Other/" "OS/" "MobileBackups/" "Applications/" "../" "./")
+
+ ("/Users/aaron/emacs.d/" (22045 55013 0 0) "tutorial/" "snippets/" "settings/" "recentf" "init.el" "ido.last" "eshell/" "elpa/" "el-get/" "auto-save-list/" "ac-comphist.dat" ".python-environments/" "../" "./")
+
+ ("/Users/aaron/.emacs.d/elpa/ecb/" (22050 29100 0 0) "tree-buffer.elc" "tree-buffer.el" "silentcomp.elc" "silentcomp.el" "ecb2/" "ecb.info-3" "ecb.info-2" "ecb.info-1" "ecb.info" "ecb.elc" "ecb.el" "ecb-winman-support.elc" "ecb-winman-support.el" "ecb-util.elc" "ecb-util.el" "ecb-upgrade.elc" "ecb-upgrade.el" "ecb-tod.elc" "ecb-tod.el" "ecb-symboldef.elc" "ecb-symboldef.el" "ecb-speedbar.elc" "ecb-speedbar.el" "ecb-semantic.elc" "ecb-semantic.el" "ecb-semantic-wrapper.elc" "ecb-semantic-wrapper.el" "ecb-pkg.el" "ecb-navigate.elc" "ecb-navigate.el" "ecb-multiframe.elc" "ecb-multiframe.el" "ecb-mode-line.elc" "ecb-mode-line.el" "ecb-method-browser.elc" "ecb-method-browser.el" "ecb-layout.elc" "ecb-layout.el" "ecb-layout-defs.elc" "ecb-layout-defs.el" "ecb-jde.elc" "ecb-jde.el" "ecb-images/" "ecb-help.elc" "ecb-help.el" "ecb-file-browser.elc" "ecb-file-browser.el" "ecb-face.elc" "ecb-face.el" "ecb-examples.elc" "ecb-examples.el" "ecb-eshell.elc" "ecb-eshell.el" "ecb-cycle.elc" "ecb-cycle.el" "ecb-create-layout.elc" "ecb-create-layout.el" "ecb-compilation.elc" "ecb-compilation.el" "ecb-compatibility.elc" "ecb-compatibility.el" "ecb-common-browser.elc" "ecb-common-browser.el" "ecb-cedet-wrapper.elc" "ecb-cedet-wrapper.el" "ecb-buffertab.elc" "ecb-buffertab.el" "ecb-autoloads.el" "ecb-autogen.elc" "ecb-autogen.el" "ecb-analyse.elc" "ecb-analyse.el" "ecb-advice-test.elc" "ecb-advice-test.el" "dir" "../" "./")
+
+ ("/Volumes/Other/tmp/endlessrunner/" (22030 1627 0 0) "menu.lua" "main.lua" "logo.png" "level1.lua" "img/" "Icon@2x.png" "Icon.png" "Icon-xxxhdpi.png" "Icon-xxhdpi.png" "Icon-xhdpi.png" "Icon-Small@3x.png" "Icon-Small@2x.png" "Icon-Small.png" "Icon-Small-50@2x.png" "Icon-Small-50.png" "Icon-Small-40@3x.png" "Icon-Small-40@2x.png" "Icon-Small-40.png" "Icon-mdpi.png" "Icon-ldpi.png" "Icon-hdpi.png" "Icon-76@2x.png" "Icon-76.png" "Icon-72@2x.png" "Icon-72.png" "Icon-60@3x.png" "Icon-60@2x.png" "Icon-60.png" "grass.png" "Default-568h@2x.png" "crate.png" "config.lua" "button.png" "button-over.png" "build.settings" "background.jpg" ".DS_Store" "../" "./")
+
+ ("/Users/aaron/org/" (22049 62435 0 0) "links.org" "../" "./")
+
+ ("/Volumes/Other/softworks/hawaii/hawaii-djangoshop/djangoshop/address/" (21909 55418 0 0) "tests.pyc" "serializers.pyc" "serializers.py" "models.pyc" "models.py" "migrations/" "__init__.pyc" "__init__.py" "../" "./")
+
+ ("/Volumes/Other/softworks/hawaii/hawaii-mapp/mapp/maps/fixtures/users/" (22049 16953 0 0) "users.usertypes.json" "script.pyc" "script.py" "admin_script.pyc" "admin_script.py" "__init__.pyc" "__init__.py" "../" "./")
+
+ ("/Volumes/Other/softworks/hawaii/hawaii-djangoshop/env/" (21919 11150 0 0) "src/" "pip-selfcheck.json" "lib/" "include/" "bin/" ".Python" "../" "./")
+
+ ("/Volumes/Other/softworks/hawaii/hawaii-djangoshop/djangoshop/ratings/templatetags/" (22009 31499 0 0) "ratings_tags.pyc" "ratings_tags.py" "__init__.pyc" "__init__.py" "../" "./")
+
+ ("/Volumes/Other/softworks/hawaii/hawaii-mapp/mapp/maps/fixtures/location_type/" (21894 29647 0 0) "wholesalers.png" "retailers.png" "restauranteurs.png" "processors.png" "homes.png" "farmers.png" "../" "./")
+
+ ("/Users/aaron/.zprezto/modules/prompt/functions/" (22048 62804 0 0) "prompt_steeef_setup" "prompt_sorin_setup" "prompt_smiley_setup" "prompt_skwp_setup" "prompt_pure_setup" "prompt_powerline_setup" "prompt_peepcode_setup" "prompt_paradox_setup" "prompt_nicoulaj_setup" "prompt_minimal_setup" "prompt_kylewest_setup" "prompt_giddie_setup" "prompt_garret_setup" "prompt_damoekri_setup" "prompt_cloud_setup" "prompt_agnoster_setup" "async" "../" "./")
+
+ ("/Volumes/Other/softworks/hawaii/hawaii-mapp/mapp/.ebextensions/" (22025 61628 0 0) "01_mapp.config" "../" "./")
+
+ ("/Users/aaron/.zprezto/runcoms/" (22048 42648 0 0) "zshrc" "zshenv" "zprofile" "zpreztorc" "zlogout" "zlogin" "README.md" "../" "./")
+
+ ("/Users/aaron/.zprezto/modules/prompt/external/" (22048 42635 0 0) "pure/" "powerline/" "agnoster/" "../" "./")
+
+ ("/Users/aaron/.zprezto/modules/prompt/" (21726 6403 0 0) "README.md" "init.zsh" "functions/" "external/" "../" "./")
+
+ ("/Users/aaron/.zprezto/modules/" (22048 42648 0 0) "yum/" "wakeonlan/" "utility/" "tmux/" "terminal/" "syntax-highlighting/" "ssh/" "spectrum/" "screen/" "ruby/" "rsync/" "README.md" "rails/" "python/" "prompt/" "perl/" "pacman/" "osx/" "ocaml/" "node/" "macports/" "homebrew/" "history-substring-search/" "history/" "helper/" "haskell/" "gpg/" "gnu-utility/" "git/" "fasd/" "environment/" "emacs/" "editor/" "dpkg/" "dnf/" "directory/" "completion/" "command-not-found/" "archive/" "../" "./")
+
+ ("/Users/aaron/.zprezto/" (22048 42648 0 0) "runcoms/" "README.md" "modules/" "init.zsh" "CONTRIBUTING.md" ".gitmodules" ".gitignore" ".git/" "../" "./")
+
+ ("/Volumes/Other/softworks/hawaii/hawaii-mapp/mapp/mappweb/" (22047 9876 0 0) "wsgi.pyc" "wsgi.py" "urls.pyc" "urls.py" "tests.pyc" "templatetags/" "settings.pyc" "settings.py" "runner.pyc" "runner.py" "guitest_settings.pyc" "guitest_settings.py" "defaults.pyc" "defaults.py" "celery.py" "__init__.pyc" "__init__.py" "../" "./")
+
+ ("/Users/aaron/.zprezto/modules/emacs/" (21726 6403 0 0) "README.md" "init.zsh" "../" "./")
+
+ ("/etc/" (22045 55334 0 0) "zshenv" "xtab" "ttys" "syslog.conf" "sudoers" "sudo_lecture" "sshd_config~previous" "sshd_config" "ssh_config~orig" "ssh_config" "snmp/" "shells" "services" "security/" "rtadvd.conf" "rpc" "rmtab" "resolv.conf" "rc.netboot" "rc.imaging" "rc.common" "racoon/" "protocols" "profile" "ppp/" "postfix/" "php.ini.default-5.2-previous" "php.ini.default" "php-fpm.conf.default" "pf.os" "pf.conf" "pf.anchors/" "periodic/" "paths.d/" "paths" "passwd~orig" "passwd" "pam.d/" "openldap/" "ntp_opendirectory.conf" "ntp.conf" "ntp-restrict.conf" "notify.conf" "nfs.conf" "newsyslog.d/" "newsyslog.conf" "networks" "nanorc" "moduli~previous" "moduli" "master.passwd~orig" "master.passwd" "manpaths.d/" "manpaths" "man.conf" "mail.rc" "mach_init_per_user.d/" "mach_init_per_login_session.d/" "mach_init.d/" "locate.rc" "localtime" "krb5.keytab" "kern_loader.conf" "kcpassword" "irbrc" "hosts.equiv" "hosts" "group~previous" "group" "gettytab" "ftpusers" "ftpd.conf.default" "ftpd.conf" "fstab.hd" "find.codes" "emond.d/" "efax.rc" "dnsextd.conf" "defaults/" "cups/" "csh.logout" "csh.login" "csh.cshrc" "com.apple.screensharing.agent.launchd" "bootpd.plist" "bashrc" "autofs.conf" "auto_master" "auto_home" "asl.conf" "asl/" "apache2/" "aliases.db" "aliases" "afpovertcp.cfg" "../" "./")
+
+ ("/Users/" (21665 54595 0 0) "Shared/" "Guest/" "aaron/" ".localized" "../" "./")
+
+ ("/Volumes/Other/softworks/hawaii/hawaii-mapp/mapp/maps/tests/unit/data_import/" (22047 41631 0 0) "test_admin_view.pyc" "test_admin_view.py" "test.geojson" "__init__.pyc" "__init__.py" "../" "./")
+
+ ("/Volumes/Other/softworks/hawaii/hawaii-mapp/mapp/templates/assets/js/libs/" (22047 1405 0 0) "ui.select2.js" "ui.select.js" "ui-bootstrap-tpls-0.12.1.min.js" "timeline.js" "table_visualization.js" "smart-table.min.js" "nv.d3.min.js" "nv.d3.js" "ng-maps.min.js" "ng-maps.js" "lodash.underscore.min.js" "jquery.cookie.js" "jquery-ui-1.10.3.min.js" "jquery-2.0.2.min.js" "highcharts.js" "highcharts-ng.min.js" "highcharts-ng.js" "highcharts-more.js" "highcharts-exporting.js" "flatten.js" "d3.v3.min.js" "d3.min.js" "clickoutside.directive.js" "checklist-model.js" "angular-summernote.min.js" "angular-social-links.js" "angular-select.min.js" "angular-nvd3.min.js" "angular-nvd3.js" "angular-google-maps.min.js" "angular-file-upload.min.js" "angular-file-upload-shim.min.js" "angular-drag-and-drop-lists.min.js" "angular-drag-and-drop-lists.js" "../" "./")
+
+ ("/Volumes/Other/softworks/hawaii/hawaii-mapp/mapp/templates/maps-admin/" (22047 1183 0 0) "widgets/" "users/" "settings/" "resources/" "profile/" "partials/" "locations/" "forms/" "data/" "dashboard/" "categories/" "base.html" "__init__.py" ".#base.html" "../" "./")
+
+ ("/Volumes/Other/Downloads/data_viz/" (21996 64223 0 0) "usa_lemons.csv" "usa_kolanuts.csv" "test.json" "states_21basic.zip" "states_21basic/" "SolarRadiation_month_ascii.rar" "racedata.zip" "racedata/" "HawaiiIsohyetTIFs_inches.zip" "HawaiiIsohyetTIFs_inches/" "data_viz/" "countywarningarea.zip" "countywarningarea/" "antarctica-latest.shp.zip" "antarctica-latest.shp copy.zip" "antarctica-latest.shp copy/" "AET_in_month_raster.rar" ".DS_Store" "../" "./")
+
+ ("/Volumes/Other/Downloads/" (22045 42905 0 0) "You Don't Know JS_ ES6 &amp; Beyond.pdf" "yellow_latest.rar" "yellow_files/" "yellow5.png" "yellow latest.psd" "XZ.pkg" "wwwsqldesigner-2.7.zip" "wwwsqldesigner-2.7/" "www2.mrcesar.co.webarchive" "wss_SSA_HI995_soildb_HI_2003_[2014-09-25].zip" "wss_SSA_HI990_soildb_HI_2003_[2014-09-25].zip" "wss_SSA_HI980_soildb_HI_2003_[2014-09-25].zip" "wss_SSA_HI970_soildb_HI_2003_[2014-09-25].zip" "wss_SSA_HI960_soildb_HI_2003_[2014-09-25].zip" "wss_SSA_HI950_soildb_HI_2003_[2014-09-25].zip" "wss_SSA_HI801_soildb_HI_2003_[2014-09-25].zip" "wss_SSA_HI701_soildb_HI_2003_[2014-09-25].zip" "WS Empirical Formula.doc" "Writers-notebook-for-Scrivener1.zip" "Writers-notebook-for-Scrivener1-2.zip" "World-building-Leviathan-Scrivener-template.zip" "Wireshark Essentials.pdf" "weylandterm.gif" "WebSocket.pdf" "Web Design for Developers.pdf" "wallhaven-242070.jpg" "Visual Design Solutions.pdf" "vintage_files.zip" "vintage_files/" "UnwdokZ.html" "UNMC voluntary service report.docx" "Unknown-6" "Unknown-5" "Unknown-4" "Unknown-3" "Unknown-2" "Unknown" "ui-bootstrap-tpls-0.12.1.js~" "U4 Community Service-module outline.docx" "U4 Community Service-module outline-2.docx" "TVMFunctionalFeedbackAnalysis11032015.xlsx" "TVMFinanceFeedbackAnalysis18032015.xlsx" "tutorial2/" "traditional_flow.png" "TotalTerminal-1.5.4.dmg" "TotalSpaces2-2.2.9.dmg" "Thinking in Promises.pdf" "Thinking Ahead.pdf" "thesis.pdf" "Theory of Computation.pdf" "The SparkFun Guide to Processing.pdf" "The Responsive Web.pdf" "The Project Manager's Guide to Mastering Agile.pdf" "The GNU Make Book.pdf" "textOnlyBW.png" "textOnly.png" "Text.png" "Text-2.png" "term.png" "TeamViewer.dmg" "SwiftSustainableFarming.pdf" "SwiftSupplyChain.pdf" "SuperMario64HD_Mac.zip" "SuperMario64HD.app/" "Sublime Text Build 3065.dmg" "steam.dmg" "SourceTree_2.0.4.dmg" "source-code-pro-2.010R-ro-1.030R-it.zip" "source-code-pro-2.010R-ro-1.030R-it/" "source-code-pro/" "softworks_logo.jpg" "SMitra-International Nutrition-Module Specification.doc" "SMitra-International Nutrition-Module Specification-2.doc" "SMitra Body Composition -11.pdf" "sf0DTGA2NU6XSgH4Z3glv_KuzFE2b434mZPT2XiwcmY.jpeg" "sensible.zip" "search-engine-optimization-starter-guide.pdf" "Search Patterns.pdf" "sdDvqRBgwuxR_Vbg8C6tLbszpjDBbYnM-1TRMF9rupg.jpeg" "ScrivenerCaseStudy.zip" "Screenshot_2015-04-20-13-15-14.png" "Screenshot_2015-04-20-12-59-44.png" "Screenshot_2015-04-20-12-59-20.png" "ScratchforECS-StudentWorkbook.pdf" "ScratchforECS-Curriculumoutlineforinstructors.pdf" "Scratch-436.dmg" "Scientific-Report-of-the-2015-Dietary-Guidelines-Advisory-Committee.pdf" "Scenario-Focused Engineering.pdf" "sample_invoice.docx" "retro-ribbons-elements-PIXEDEN.zip" "retro-ribbons-elements-PIXEDEN/" "resume.docx" "Request for Proposal_Report-Malaysia Defence and Security Market report_edit.doc" "Request for Proposal_Report-Malaysia Defence and Security Market report.doc" "Regression Analysis by Example, 5th Edition.pdf" "Reflective Journal.docx" "Reflective Journal - NTZ.docx" "reflective journal (dennis).docx" "Recommendations - Nutritional status of the population of a named country.pdf" "RealPythonAllParts-Beta-v7.zip" "RealPythonAllParts-Beta-v7/" "ReadCubeSetup.zip" "ReadCubeSetup-2.zip" "Raspberry Pi Computer Vision Programming.pdf" "R59TCfO.jpg" "PythonTurtle Mac installer.dmg" "python-3.4.3-macosx10.6.pkg" "Python Requests Essentials.pdf" "Python Parallel Programming Cookbook.pdf" "Python Network Programming Cookbook.pdf" "Python Data Analytics.pdf" "Python 3 Object-Oriented Programming, 2nd Edition.pdf" "pycon2013_student_package.tar.gz" "pycon2013_student_package.tar-2.gz" "pycon2013_student_package/" "pycharm-professional-4.0.4.dmg" "pycharm-professional-4.0.4-2.dmg" "Prototype to Product.pdf" "Proposal Security Eco World 26082015_Rev002.docx" "Proposal Security Eco World 26082015_Rev001.docx" "Project Management Leadership, 2nd Edition.pdf" "Project Management Handbook.pdf" "product_info - Sheet1.csv" "Pro Grunt.js.pdf" "Pro Bash Programming, 2nd Edition.pdf" "postgresql-9.4.4-3-windows.exe.download/" "positron.zip" "positron/" "Plone-4.3.4-UnifiedInstaller/" "Plone-4.3.4-r1-UnifiedInstaller.tgz" "Plex-Media-Server-0.9.5.2.zip" "Plex Media Server.app/" "piskel-0.5.4.dmg" "Photo on 2011-05-11 at 10.55 #2.jpg" "phantomjs-2.0.0-macosx.zip" "phantomjs-2.0.0-macosx/" "phantomjs/" "pentest.pem" "PayrollFeedbackAnalysis02032015.xlsx" "OWASP Top 10 - 2013.pdf" "OptimizedHorizontal.png" "Nutrition and the Health of Populations exam 2010 (2).doc" "Nutrition and the Health of Populations exam 2010 (2)-2.doc" "NoSQL For Dummies.pdf" "Node.js in Practice.pdf" "Node.js By Example.pdf" "mt7601-3.18.11-781.tar.gz" "mrCesarWeekendFinal.zip" "mrCesarWeekendFinal/" "Mr. Cesar College Data - High Schools.csv" "Mr. Cesar College Data - High Schools-2.csv" "MPU 3132 Malaysian Studies III Teaching Schedule.docx" "Monoid-Loose-XtraLarge-Dollar-0-1-l.zip" "Monoid-Loose-XtraLarge-Dollar-0-1-l/" "Monoid-Loose-Small-Dollar-0-1-l.zip" "Monoid-Loose-Small-Dollar-0-1-l/" "mongoengine-odm.epub" "mongoengine-odm-2.epub" "mongodb-osx-x86_64-3.0.3.tgz" "mongodb-osx-x86_64-2.6.7.tgz" "modern-templates.oxt" "Mobile_cellular_2000-2013.xls" "Minutes_proposal_discussion.odt" "Minecraft.dmg" "minecraft-pi-0.1.1.tar.gz" "Minecraft-2.dmg" "MindNodeMacDemo.zip" "Migration_to_Create_Site.py" "Migration_to_Create_Site-2.py" "MicrosoftOffice2011.dmg" "Microsoft Excel 2013 Data Analysis and Business Modeling.pdf" "Microsoft Excel 2010_ Data Analysis and Business Modeling, 3rd Edition.pdf" "microblog-version-0.16.zip" "microblog-version-0.16/" "microblog-version-0.13.zip" "microblog-version-0.13/" "microblog-version-0.11.zip" "microblog-version-0.11/" "Mendeley-Desktop-1.13.2-OSX-Universal.dmg" "mcpi/" "Masterminds of Programming.pdf" "Mastering JavaScript Promises.pdf" "March Training Feedback.xlsx" "Mapping Experiences.pdf" "madison-files.zip" "madison-files/" "MacKeeper.pkg" "MacKeeper-2.pkg" "Machine Learning in Python.pdf" "lua-5.3.1.tar.gz" "lua-5.3.1/" "Lua Game Development Cookbook.pdf" "logoOnlyBW.png" "logoOnly.png" "logoOnly-3.png" "logoOnly-2.png" "logo6ATransparent.png" "logo6ATransparent-2.png" "logo6ABW.png" "logo6ABW-2.png" "logo6A.psd" "logo6A.png" "logo6A-2.psd" "logo6A-2.png" "logo2.png" "logc.jpg" "LiveReload/" "Linux Command Line and Shell Scripting Bible, 3rd Edition.pdf" "Linear and Nonlinear Programming, 4th Edition.pdf" "LightTableMac.zip" "LightTable/" "Learning Redis.pdf" "Learning Python Testing.pdf" "Learning Less.js.pdf" "Learning Haskell Data Analysis.pdf" "Learn Active Directory Management in a Month of Lunches.pdf" "Lean Websites.pdf" "Landholders - growers relationship.docx" "kJMKLzE.jpg" "Kivy-1.8.0-osx.dmg" "kidocode_jobs_edit/" "Jump Start MySQL.pdf" "js.zip" "js/" "JavaScript Domain-Driven Design.pdf" "Jasmine JavaScript Testing, 2nd Edition.pdf" "iu.png" "iu.jpeg" "iu.gif" "iu-2.png" "iu-2.jpeg" "International nutrition surveiilance and community nutrition.pptx" "Integrated Retail Farming Module -EDITED.pptx" "Install ReadCube.app/" "Insidious.Chapter.2.2013.720p.BluRay.x264-SPARKS [PublicHD]/" "Insidious (2010) [1080p]/" "Infrastructure as Code.pdf" "Information Dashboard Design.pdf" "Individuals_Internet_2000-2013.xls" "index.aspx.html" "IMG-20140316-WA0000.jpg" "If Hemingway Wrote JavaScript.pdf" "Hot Seat.pdf" "Hidescroll.js-master.zip" "Hidescroll.js-master/" "HI701/" "heroku-toolbelt.pkg" "headerBW.png" "header.png" "hawtmk.shp.zip" "hawtmk.shp/" "Guidelines for Project Presentations.docx" "Grunt.js Cookbook.pdf" "Google Phone Gallery_files/" "Google Phone Gallery.html" "Google one-page SEO Guide" "Gmail - Application for Online Certificate of Good Conduct.pdf" "Gitter-1.162.dmg" "GitHub for Mac 205.zip" "git-lfs-darwin-amd64-1.0.0.tar.gz" "git-lfs-1.0.0/" "git-2.2.1-intel-universal-mavericks.dmg" "Git in Practice.pdf" "gimp-2.8.14.dmg.torrent" "gimp-2.8.14.dmg" "Fudah.png" "fox-all-files.zip" "Food security.pptx" "Food security-2.pptx" "font-awesome-4.4.0.zip" "font-awesome-4.4.0/" "font-awesome-4.3.0.zip" "flask-openid-master.zip" "flask-openid-master/" "flask-oauth-example-master.zip" "flask-oauth-example-master/" "Fixed_tel_2000-2013.xls" "February Training Feedback.xlsx" "February Training Feedback-3.xlsx" "February Training Feedback-2.xlsx" "fblogo.jpg" "fallout_3_terminal_by_oreh07-d74g6v3.png" "Ember.js Web Development with Ember CLI.pdf" "Emacs-24.5-1-universal.dmg" "Emacs-24.4-universal.dmg" "Eleanor.pptx" "Effective DevOps.pdf" "Dshell-master.zip" "DSA.doc" "DSA-edit1.doc" "dp2.png" "download.zip" "Doing Math with Python.pdf" "documents-export-2015-05-10.zip" "documents-export-2015-02-03 2.zip" "documents-export-2015-02-03/" "Digital Design for Print and Web.pdf" "Developing Web Apps with Haskell and Yesod, 2nd Edition.pdf" "Designing Delivery.pdf" "Deploying Node.js.pdf" "Dear Larry_edit.docx" "Dear Larry.docx" "Dear Larr1_edit.docx" "Dear Larr1.docx" "data_viz.tar.gz" "data_viz/" "data-visualizations.zip" "data-visualizations/" "Data-oriented Development with AngularJS.pdf" "Data Visualization with JavaScript.pdf" "Data Structures and Algorithms with Python.pdf" "Data Structures and Algorithms with Python-2.pdf" "Data Science For Dummies.pdf" "Dash.zip" "Dash-2.zip" "D23BN3 Molecular Nutrition, MMS.docx" "CSEDrobotics.pdf" "CS Plan Proposal.docx" "CS Final Report Guidelines.docx" "CreativeComputing20141015.pdf" "cover2.png" "Cover1.png" "cover.psd" "Cover.png" "COURSE DESCRIPTION PYDEVELOPER 0.4_youth_edit.odt" "CoronaSDK-2015.2646.dmg" "Corona SDK Mobile Game Development, 2nd Edition.pdf" "Contractor Agreement Aaron Myatt.pdf" "contents.xml" "COMMUNITY-SERVICE.docx" "com.blacktree.Quicksilver__16401.dmg" "com.blacktree.Quicksilver.QSScreenCapturePlugIn__38.qspkg" "com.blacktree.Quicksilver.QSGmailPlugIn__95.qspkg" "com.blacktree.Quicksilver.BezelHUD__769.qspkg" "CodeFiles.zip" "CodeCrAft.png" "codecraft-sm.jpg" "codecraft-header.jpg" "codecraft-fbsm.jpg" "codecraft-fb.jpg" "codecraft-desktop.jpg" "Clix2Pay_Remittance/" "Charles-Abraham-Michie-2008-taxonomy-paper.pdf" "CFF_AIMY_POSTER-03.jpg" "castle1.png" "BusinessProposal(Tentative_Incomplete).pptx" "BusinessDiagram(Tentative).pdf" "BundleLogs-1443500268831.zip" "BundleLogs-1443500268831/" "BundleLogs-1443497083626.zip" "BundleLogs-1443497083626/" "Building Virtual Pentesting Labs for Advanced Penetration Testing.pdf" "Building Multicopter Video Drones.pdf" "Building Microservices.pdf" "Building Great Software Engineering Teams.pdf" "Build Your Own PaaS with Docker.pdf" "BSc Project Symposium 2015 assessors  timetable_student copy.doc" "BSc Project Symposium 2015 assessors  timetable_student copy-2.doc" "bootstrap-master/" "Bioinformatics with Python Cookbook.pdf" "binB3ABqbjoZ9.bin" "BHP-Code.zip" "BEwMP0gf0PQRFmkKJC9B1Fs_fUPeDv8laJKO07HCH8U.jpeg" "Beginning Scala, 2nd Edition.pdf" "BBCC_doaselamat.docx" "BBCC_changeinterms.docx" "Banquo.pptx" "Backbone.js Essentials.pdf" "Articulating Design Decisions.pdf" "Archive.zip" "Appium 2 Day Course Outline.doc" "anki-2.0.32.dmg" "anki-2.0.31.dmg" "anies_resume_.docx" "anies_pic.jpg" "AngularJS Testing Cookbook.pdf" "AngularJS by Example.pdf" "All-Scrivener-Coach-Templates.zip" "All-Scrivener-Coach-Templates/" "ainability-html-emails.zip" "ainability-html-emails/" "AIMStarterKitPC.zip" "AIMStarterKitMac.zip" "Agile Performance Improvement.pdf" "AdventuresInMinecraft/" "ADS RES.doc" "AdobeFlashPlayerInstaller_17au_ltrosxd_aaa_aih.dmg" "AdobeFlashPlayerInstaller_17_ltrosxd_aaa_aih.dmg" "AdobeAIR.dmg" "academic-paper-template.scriv.zip" "AaronMyatt_CV.odt" "AaronMyatt_CV.docx" "AaronMyatt_CV.doc" "72B3PJh.jpg" "23rd-24th.xlsx" "20150603_114239.jpg" "20150603_114139.jpg" "2015-05-27 12.17.53.jpg" "2015-05-27 12.03.15.jpg" "2015-05-27 12.03.09.jpg" "13TH_FEB.xlsx" "12160_2013_9486_MOESM1_ESM.docx" "11393030_10206961525140474_5341336249716642246_n.jpg" "10463741_10152289026133339_4764110275187462110_o.png" ".DS_Store" "../" "./")
+
+ ("/Volumes/Other/" (21871 4819 0 0) "tmp/" "softworks/" "PyCademy/" "Projects/" "product_info - Sheet1.csv" "notebooks/" "mongodb/" "mongodata/" "Downloads/" "cv/" "course/" "code/" "Books/" "BitBucket/" "Backup_301214/" "AWS/" ".Trashes/" ".TemporaryItems/" ".Spotlight-V100/" ".MobileBackups/" ".fseventsd/" ".DS_Store" ".DocumentRevisions-V100/" "../" "./")
+
+ ("/Volumes/Other/softworks/hawaii/hawaii-mapp/mapp/templates/maps-admin/settings/partials/" (22045 49047 0 0) "modal-csv.html" "importfile-upload.html" "importfile-table.html" "importfile-normalize.html" "importfile-conversion.html" "../" "./")
+
+ ("/Volumes/Other/softworks/conad/hawtmk.shp/" (22044 28074 0 0) "NIParcels.pdf" "hawtmk.shx" "hawtmk.shp.xml" "hawtmk.shp" "hawtmk.sbx" "hawtmk.sbn" "hawtmk.prj" "hawtmk.dbf" "../" "./")
+
+ ("/Volumes/Other/softworks/" (22043 18291 0 0) "RealPythonAllParts-Beta-v7/" "mrcesar/" "invoices/" "hawaii/" "credentials.csv" "conad/" "codecraft/" "aws accounts.txt" "aaronskey.pem" ".DS_Store" "../" "./")
+
+ ("/Volumes/Other/softworks/hawaii/" (21949 42006 0 0) "hawaii-mapp/" "hawaii-djangoshop/" "hawaii-core/" ".DS_Store" "../" "./")
+
+ ("/Volumes/Other/softworks/hawaii/hawaii-mapp/mapp/maps/users/" (22043 30542 0 0) "views.pyc" "views.py" "urls.pyc" "urls.py" "test.pyc" "test.py" "tasks.pyc" "tasks.py" "serializers.pyc" "serializers.py" "models.pyc" "models.py" "api_view.pyc" "api_view.py" "__init__.pyc" "__init__.py" "../" "./")
+
+ ("/Volumes/Other/softworks/hawaii/hawaii-djangoshop/env/src/maps/maps/users/" (22042 19182 0 0) "views.py" "urls.py" "test.py" "tasks.py" "serializers.py" "models.py" "api_view.py" "__init__.py" ".#api_view.py" "#api_view.py#" "../" "./")
+
+ ("/Volumes/Other/softworks/hawaii/hawaii-mapp/mapp/templates/assets/js/angularjs/components/sysdata/" (22043 30526 0 0) "sysdata_factory.js" "../" "./")
+
+ ("/Volumes/Other/softworks/hawaii/hawaii-djangoshop/djangoshop/assets/js/controllers/landholder/" (22042 16292 0 0) "soilmate_requests_controller.js" "browse_soilmate_controller.js" "add_plot_controller.js" "../" "./")
+
+ ("/Volumes/Other/softworks/hawaii/hawaii-djangoshop/djangoshop/tests/unit/ratings/" (22042 14512 0 0) "test_ratings_models.pyc" "test_ratings_models.py" "__init__.pyc" "__init__.py" "../" "./")
+
+ ("/Volumes/Other/softworks/hawaii/hawaii-djangoshop/env/src/rest-framework-mongo/rest_framework_mongoengine/" (22042 19413 0 0) "viewsets.py" "tests/" "serializers.pyc" "serializers.py" "routers.py" "generics.pyc" "generics.py" "fields.pyc" "fields.py" "__init__.pyc" "__init__.py" ".#generics.py" "#generics.py#" "../" "./")
+
+ ("/Volumes/Other/softworks/hawaii/hawaii-djangoshop/djangoshop/shop/" (22040 52708 0 0) "views.pyc" "views.py" "urls.pyc" "urls.py" "tests.pyc" "serializers.pyc" "serializers.py" "models.pyc" "models.py" "migrations/" "forms.pyc" "admin.pyc" "__init__.pyc" "__init__.py" "../" "./")
+
+ ("/Volumes/Other/softworks/hawaii/hawaii-djangoshop/djangoshop/templates/user/buyer/" (22040 52696 0 0) "view-order.html" "templatetags/" "subscriptions.html" "stores.html" "stores-map.html" "store-view.html" "services.html" "services-map.html" "service-details.html" "profile.html" "products.html" "products-map.html" "product-details.html" "partials/" "orders.html" "modal-checkout.html" "markets.html" "markets-map.html" "market-view.html" "left-panel.html" "dashboard.html" "checkout.html" "cart.html" "../" "./")
+
+ ("/Volumes/Other/softworks/hawaii/hawaii-djangoshop/djangoshop/templates/user/buyer/partials/" (22040 52696 0 0) "terms_of_service.html" "store_search_form.html" "store_list_map.html" "store_list.html" "service_search_form.html" "service_list_map.html" "service_list.html" "product_search_form.html" "product_list_map.html" "product_list.html" "market_search_form.html" "market_list_map.html" "market_list.html" "../" "./")
+
+ ("/Volumes/Other/softworks/hawaii/hawaii-djangoshop/djangoshop/user/buyer/" (22040 54547 0 0) "views.pyc" "views.py" "urls.pyc" "urls.py" "stores_views.pyc" "stores_views.py" "services_views.pyc" "services_views.py" "products_views.pyc" "products_views.py" "markets_views.pyc" "markets_views.py" "__init__.pyc" "__init__.py" "../" "./")
+
+ ("/Volumes/Other/softworks/hawaii/hawaii-djangoshop/djangoshop/ratings/" (22040 52708 0 0) "views.pyc" "views.py" "utils.pyc" "utils.py" "urls.pyc" "urls.py" "templatetags/" "models.pyc" "models.py" "migrations/" "management/" "__init__.pyc" "__init__.py" "../" "./")
+
+ ("/Volumes/Other/softworks/hawaii/hawaii-djangoshop/djangoshop/user/templatetags/" (22042 14511 0 0) "user_tags.pyc" "user_tags.py" "ratings_tags.pyc" "ratings_tags.py" "mapp_tags.pyc" "grower_tags.pyc" "grower_tags.py" "__init__.pyc" "__init__.py" "../" "./")
+
+ ("/Volumes/Other/softworks/hawaii/hawaii-mapp/mapp/maps/" (22043 30526 0 0) "users/" "tests/" "resources/" "org/" "more_ainability_issues.txt" "locations/" "fixtures/" "django_mapp/" "datastore/" "data_visualization/" "data_import/" "custom_form/" "core/" "categories/" "__init__.pyc" "__init__.py" ".DS_Store" "../" "./")
+
+ ("/Volumes/Other/softworks/hawaii/hawaii-djangoshop/djangoshop/templates/user/landholder/templatetags/" (21869 1299 0 0) "food_cert_options.html" "../" "./")
+
+ ("/Volumes/Other/softworks/hawaii/hawaii-djangoshop/djangoshop/ratings/management/commands/" (22036 64930 0 0) "update_similar_items.pyc" "update_similar_items.py" "__init__.pyc" "__init__.py" "../" "./")
+
+ ("/Volumes/Other/softworks/hawaii/hawaii-djangoshop/djangoshop/templates/user/provider/" (22036 64852 0 0) "view-order.html" "templatetags/" "subscriptions.html" "stores.html" "stores-settings.html" "profile.html" "partials/" "orders.html" "left-panel.html" "dashboard.html" "add-service.html" "add-product.html" "../" "./")
+
+ ("/Volumes/Other/softworks/hawaii/hawaii-djangoshop/djangoshop/templates/user/admin/" (22036 64852 0 0) "warning/" "users/" "stores.html" "stores-settings.html" "store-view.html" "settings/" "profile.html" "partials/" "mylocations.html" "myentities.html" "markets.html" "left-panel.html" "help/" "forums/" "events/" "dashboard.html" "categories/" "blogs/" "add-market.html" "../" "./")
+
+ ("/Volumes/Other/softworks/hawaii/hawaii-djangoshop/djangoshop/assets/js/controllers/admin/" (22036 64852 0 0) "addmarket_controller.js" "../" "./")
+
+ ("/Volumes/Other/softworks/hawaii/hawaii-djangoshop/djangoshop/pm/" (22036 64930 0 0) "views.pyc" "views.py" "utils.pyc" "utils.py" "urls.pyc" "urls.py" "tests.pyc" "serializer.pyc" "serializer.py" "models.pyc" "models.py" "migrations/" "forms.pyc" "forms.py" "fields.pyc" "fields.py" "admin.pyc" "__init__.pyc" "__init__.py" "../" "./")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t

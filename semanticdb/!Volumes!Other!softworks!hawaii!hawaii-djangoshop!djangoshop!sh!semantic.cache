@@ -1,0 +1,73 @@
+;; Object sh/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "sh/"
+  :tables
+  (list
+    (semanticdb-table "__init__.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("__future__" include nil nil [1 39])
+            ("app" include nil nil [83 107]))          
+      :file "__init__.py"
+      :pointmax 108
+      :fsize 107
+      :lastmodtime '(21916 2808 0 0)
+      :unmatched-syntax '((FROM 70 . 74) (PERIOD 75 . 76)))
+    (semanticdb-table "urls.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("django.contrib" include nil nil [1 33])
+            ("django.conf.urls" include nil nil [34 85])
+            ("django.conf" include nil nil [86 118])
+            ("views" include nil nil [119 131])
+            ("homepage.urls" include nil nil [133 188])
+            ("homepage.views" include nil nil [189 226])
+            ("maps.users.urls" include nil nil [227 270])
+            ("urlpatterns" variable nil nil [273 2096])
+            ("urlpatterns" variable nil nil [2098 2258]))          
+      :file "urls.py"
+      :pointmax 2259
+      :fsize 2258
+      :lastmodtime '(22055 27534 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "views.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("django.views.generic" include nil nil [1 46])
+            ("django.contrib.auth.decorators" include nil nil [47 104])
+            ("django.utils.decorators" include nil nil [105 157])
+            ("Partial" type
+               (:superclasses ("TemplateView")
+                :members 
+                  ( ("dispatch" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [207 211])
+                            ("request" variable nil (reparse-symbol function_parameters) [213 220])
+                            ("args" variable nil (reparse-symbol function_parameters) [222 227])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [229 237]))                          )
+                        (reparse-symbol indented_block_body) [194 520]))                  
+                :type "class")
+                nil [160 520])
+            ("PrivatePartial" type
+               (:superclasses ("TemplateView")
+                :members 
+                  ( ("" code nil (reparse-symbol indented_block_body) [986 1002])
+                    ("dispatch" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1020 1024])
+                            ("request" variable nil (reparse-symbol function_parameters) [1026 1033])
+                            ("args" variable nil (reparse-symbol function_parameters) [1035 1040])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [1042 1050]))                          )
+                        (reparse-symbol indented_block_body) [1007 1361]))                  
+                :type "class")
+                nil [928 1361]))          
+      :file "views.py"
+      :pointmax 1361
+      :fsize 1360
+      :lastmodtime '(21925 15307 0 0)
+      :unmatched-syntax nil))
+  :file "!Volumes!Other!softworks!hawaii!hawaii-djangoshop!djangoshop!sh!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")
