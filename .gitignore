@@ -1,1 +1,8 @@
 .python-environments/
+eshell/*
+backups/*
+*.elc
+elpa/*
+ido.last
+recentf
+*~

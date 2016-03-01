@@ -68,6 +68,16 @@
      ido-at-point
      nodejs-repl
      restclient
+     typescript-mode
+     markdown-mode
+     guide-key
+     flx-ido
+     flx
+     f
+     ido-at-point
+     ido-ubiquitous
+     js2-mode
+     smartparens
      )))
 
 (condition-case nil
@@ -78,3 +88,22 @@
 
 ;; Lets start with a smattering of sanity
 (require 'sane-defaults)
+
+
+(when is-mac
+  (require-package 'exec-path-from-shell)
+  (exec-path-from-shell-initialize))
+
+;; guide-key
+(require 'guide-key)
+(setq guide-key/guide-key-sequence '("C-x r" "C-x 4" "C-x v" "C-x 8" "C-x +"))
+(guide-key-mode 1)
+(setq guide-key/recursive-key-sequence-flag t)
+(setq guide-key/popup-window-position 'bottom)
+
+;; Setup extensions
+(eval-after-load 'ido '(require 'setup-ido))
+(eval-after-load 'dired '(require 'setup-dired))
+(eval-after-load 'magit '(require 'setup-magit))
+(eval-after-load 'grep '(require 'setup-rgrep))
+
