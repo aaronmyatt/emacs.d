@@ -1,0 +1,60 @@
+if environment !== "production"
+  h4 Harp is in #{ environment } mode
+  | {{ vm }}
+  div(ng-init="vm.email='admin@admin.com'")
+  div(ng-init="vm.password='qwerty123456'")
+  - var show_password = "text";
+else
+  - var show_password = "password";
+
+ion-slide-box(on-slide-changed="slideHasChanged($index)" active-slide="vm.currentSlide")
+  ion-slide
+    div(class="item header isolated")
+      p Sign in
+
+    div(class="card gate")
+      div(class="list")
+        label(class="item item-input item-stacked-label")
+          span(class="input-label") Email address
+            input(type="text" placeholder="" ng-model="vm.email")
+
+        label(class="item item-input item-stacked-label")
+          span(class="input-label") Password
+            input(type="#{show_password}" placeholder="" ng-model="vm.password")
+
+      div(class="item item-body")
+        ul(class="list")
+          li(class="item item-checkbox")
+            label(class="checkbox")
+              input(type="checkbox" ng-model="vm.staySignedIn")
+            | Keep me signed in
+
+    div(class="card gate")
+      button(ng-click="vm.signin(vm.email, vm.password)" class="button button-block button-cta")
+        | Sign in with email
+
+    //div(class="card gate")
+    //  button(ng-click="vm.fb_login()" class="button button-block button-stable button-positive")
+    //    | Sign in with facebook
+
+  ion-slide
+    div(class="item header isolated")
+      p Sign up
+
+    div(class="card gate")
+      div(class="list")
+        label(class="item item-input item-stacked-label")
+          span(class="input-label") Email address
+          input(type="text" placeholder="" ng-model="vm.details.email")
+
+        label(class="item item-input item-stacked-label")
+          span(class="input-label") Password
+          input(type="text" placeholder="" ng-model="vm.details.password")
+
+        label(class="item item-input item-stacked-label")
+          span(class="input-label") Password Confirmation
+          input(type="text" placeholder="" ng-model="vm.details.password_confirmation")
+
+    div(class="card gate")
+      button(ng-click="vm.signup(vm.new_user)" class="button button-block button-stable button-cta")
+        | Sign up with email

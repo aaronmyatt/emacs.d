@@ -1,0 +1,9 @@
+[submodule "site-lisp/dash"]
+	path = site-lisp/dash
+	url = https://github.com/magnars/dash.el.git
+[submodule "site-lisp/smooth-scrolling"]
+	path = site-lisp/smooth-scrolling
+	url = https://github.com/aspiers/smooth-scrolling.git
+[submodule "site-lisp/undo-tree"]
+	path = site-lisp/undo-tree
+	url = https://github.com/emacsmirror/undo-tree.git

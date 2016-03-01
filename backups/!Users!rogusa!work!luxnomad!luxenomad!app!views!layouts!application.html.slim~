@@ -1,0 +1,188 @@
+doctype html
+/ paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
+/[if lt IE 7]
+  html.ie6 lang="en"
+/[if IE 7]
+  html.ie7 lang="en"
+/[if IE 8]
+  html.ie8 lang="en"
+/[if IE 9]
+  html.ie9 lang="en"
+| <!--[if (gt IE 9)|!(IE)]><!-->
+html lang="en"
+  | <!--<![endif]-->
+
+  head
+    meta charset="utf-8"
+
+    / Uncomment to make IE8 render like IE7
+    / meta http-equiv="X-UA-Compatible" content="IE=7"
+
+    / Set the viewport width to device width for mobile
+    meta name="viewport" content="width=device-width, initial-scale=0.6, minimum-scale=0.6, maximum-scale=2.0, user-scalable=yes"
+
+    title = title_map
+    meta property="og:image" content="https://s3-ap-southeast-1.amazonaws.com/tlnassets/tln_fb.jpg"
+    meta property="og:title" content="#{title_map}"
+    meta property="og:type" content="website"
+
+    - if content_for?(:meta_google)
+      meta name="google-site-verification" content="#{content_for(:meta_google)}"
+
+    - if content_for?(:meta_description)
+      meta name="description" content="#{content_for(:meta_description)}"
+      meta property="og:desc" content="#{content_for(:meta_description)}"
+    - if @hotel.present? && @canonical_link.present?
+      link rel="canonical" href="https://www.theluxenomad.com#{@canonical_link}"
+    / - if @hotel.present? && (params[:section].present? || params[:check_in_date].present? || params[:check_out_date].present? || (@hotel.state == 0))
+    /   meta name="robots" content="nofollow"
+    meta name="robots" content="index,follow"
+
+    = stylesheet_link_tag "application"
+
+    /[if (gte IE 6)&(lte IE 8)]
+      = javascript_include_tag "selectivizr"
+      / # = javascript_include_tag "vendor/modernizr"
+
+    = javascript_include_tag "application"
+    / # = javascript_include_tag "vendor/modernizr"
+    = csrf_meta_tags
+
+    = yield :js
+    = render partial: "layouts/gua"
+    = render partial: "layouts/wipepops"
+    = render partial: "layouts/loyalty"    
+    link href="https://fonts.googleapis.com/css?family=Roboto:400,100,300" rel="stylesheet" type="text/css"
+    script src="//cdn.optimizely.com/js/3184961068.js"
+    
+    script type="text/javascript" src="//api.ematicsolutions.com/v1/ematic.load.min.js"
+    = render partial: "layouts/ematic"
+  body class="logined #{controller.controller_name} #{controller.action_name}"
+    //Google Tag Manager
+    noscript
+      iframe src="//www.googletagmanager.com/ns.html?id=GTM-T2HCFZ" height="0" width="0" style="display:none;visibility:hidden"
+    javascript:
+      (function(w,d,s,l,i) {
+        w[l]=w[l]||[];
+        w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});
+        var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+
+        j.async=true;
+        j.src= '//www.googletagmanager.com/gtm.js?id='+i+dl;
+        f.parentNode.insertBefore(j,f);
+      })(window, document, 'script', 'dataLayer', 'GTM-T2HCFZ');
+      // End Google Tag Manager
+
+      // Qualaroo for theluxenomad.com
+      var _kiq = _kiq || [];
+      (function(){
+        setTimeout(function(){
+          var d = document,
+            f = d.getElementsByTagName('script')[0],
+            s = d.createElement('script');
+
+          s.type = 'text/javascript';
+          s.async = true;
+          s.src = '//s3.amazonaws.com/ki.js/56121/coI.js';
+          f.parentNode.insertBefore(s, f);
+        }, 1);
+      })();
+      var my_identifier = ["#{current_user.present? ? current_user.email : 'guests@domain.com'}"];
+
+        my_identifier.push("#{current_user.present? ? (current_user.name? ? current_user.name : current_user.email) : 'Guest User'}");
+
+      _kiq.push(my_identifier);
+
+    .viewport.off-canvas-wrap data-offcanvas=""
+      .inner-wrap
+
+        /! Off Canvas Menu
+        aside.right-off-canvas-menu
+        /! main content goes here
+        - path_names = ["/users/sign_up", "/users/sign_in", "/users", '/users/vip_sign_up', "/booking_confirmation/group_payment_confirm"]
+        - unless path_names.include? (request.path)
+          = render partial: "layouts/facebook_js_sdk"
+          = render partial: "layouts/header"
+          .row.breadscrums-luxe
+            .tln-container
+              = raw breadcrumbs :pretext => "", :style => :ul, :class => "breadcrumbs #{@hotel.present? && !@hotel["is_ean_new"] && @hotel["villa"] ? 'breadcrumbs-villa' : ''}",:separator => ""
+          = yield
+
+          = render partial: "layouts/footer"
+          = render partial: "layouts/hover_contents", :locals => { menu_destinations: @menu_destinations, menu_villas: @menu_villas, menu_current_sales: @menu_current_sales }
+          = render partial: "layouts/livechat"
+          = render partial: "layouts/crazyegg"
+        - else
+          = yield
+
+        /! close the off-canvas menu
+        a.exit-off-canvas
+
+    / Facebook Conversion Code for aleenta
+    javascript:
+      var fb_param = {};
+      fb_param.pixel_id = '6013929397774';
+      fb_param.value = '0.01';
+      fb_param.currency = 'USD';
+      (function(){
+        var fpw = document.createElement('script');
+        fpw.async = true;
+        fpw.src = '//connect.facebook.net/en_US/fp.js';
+        var ref = document.getElementsByTagName('script')[0];
+        ref.parentNode.insertBefore(fpw, ref);
+      })();
+    noscript
+      img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/offsite_event.php?id=6013929397774&amp;value=0.01&amp;currency=USD"
+
+    / Androll tracking
+    javascript:
+      $('label[for="keywords"]').labelOver('over');
+
+      var adroll_adv_id = "R464KUCWKNBY5PXABFTM3C",
+        adroll_pix_id = "KV6YOAS2NNGXJLISRJKTNB";
+
+      (function () {
+        var oldonload = window.onload;
+        window.onload = function(){
+          __adroll_loaded = true;
+
+          var scr = document.createElement("script"),
+            host = (("https:" == document.location.protocol) ? "https://s.adroll.com" : "http://a.adroll.com");
+
+          scr.setAttribute('async', 'true');
+          scr.type = "text/javascript";
+          scr.src = host + "/j/roundtrip.js";
+
+          ((document.getElementsByTagName('head') || [null])[0] ||
+            document.getElementsByTagName('script')[0].parentNode).appendChild(scr);
+        };
+      }());
+
+      // add script Adroll pixel signup button
+      $("#sign-up").on("click", function (e) {
+        try {
+          __adroll.record_user({"adroll_segments": "signup"});
+        } catch(err) {}
+      });
+
+    // Picreel Code
+    / javascript:
+    /   (function(){
+    /     var fpw = document.createElement('script');
+    /     fpw.async = true;
+    /     fpw.src = "//assets.pcrl.co/js/jstracker.min.js";
+    /     var ref = document.getElementsByTagName('script')[0];
+    /     ref.parentNode.insertBefore(fpw, ref);
+    /   })();
+
+    script src="https://static.leaddyno.com/js" type="text/javascript" 
+    javascript:
+      LeadDyno.key = "af36ccc4aebeb0dea22c28f7b8d4ff72ffd8ee52";
+      LeadDyno.recordVisit();
+      LeadDyno.autoWatch();
+
+    /   if ($.cookie("tln_main_sign_out") == "true") {
+    /     $.cookie("tln_main_sign_out", false);
+    /     $('.tln-sign-in a').trigger('click');
+    /   }

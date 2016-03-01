@@ -1,0 +1,163 @@
+- content_for :title do
+  = raw "TheLuxeNomad.com: Luxury Hotel & Villa Online Boooking - Travel the World in Style!"
+/ add meta discription home page
+- content_for :meta_description do
+  = "Luxury Villa and Hotel Booking portal, Asia-Pacific's #1 - Travel the world in style with amazing stays at affordable rates!"
+
+- content_for :meta_google do
+  = "0q7nzH7bdHsneyKCaggv--mwYYTGqVSzD-iogLz052o"
+
+- content_for :og_title do
+  = "TheLuxeNomad.com: Luxury Hotel & Villa Online Boooking - Travel the World in Style!"
+
+- content_for :og_desc do
+  = "Online Booking for Luxury Villa and Hotel all over the globe ✈ Enjoy Luxury Accomodation at best prices ✓ Book Now!"
+
+= render partial: "layouts/hero_section", :locals => { menu_destinations: @menu_villas, configurations: configurations }, :inline => true
+.body-content.clearfix
+  .tln-container
+    .tln-nomad-picks
+      .title
+        h1 Nomad picks
+        ul.tabs.header data-tab="" role="tablist" 
+          li.tab-title.item role="presentational" 
+            a.header aria-selected="true" controls="most_popular" href="#most_popular" role="tab" tabindex="0"  MOST POPULAR
+          li.tab-title.item.active role="presentational" 
+            a.header aria-selected="false" controls="last_minute" href="#last_minute" role="tab" tabindex="0"  LAST MINUTE DEALS
+          li.tab-title.item.last role="presentational" 
+            a.header aria-selected="false" controls="tln_new" href="#tln_new" role="tab" tabindex="0"  NEW ON TLN
+        .tabs-content
+          section#most_popular.content aria-hidden="false" role="tabpanel" 
+            = render partial: "featured_villa", :locals => { featured_hotels: most_popular_hotels }, :inline => true
+            / h2 First panel content goes here...
+          section#last_minute.content.active aria-hidden="true" role="tabpanel" 
+            = render partial: "featured_villa", :locals => { featured_hotels: last_minute_hotels }, :inline => true
+          section#tln_new.content aria-hidden="true" role="tabpanel" 
+            = render partial: "featured_villa", :locals => { featured_hotels: tln_new_hotels }, :inline => true
+    .tln-people-say
+      .title
+        a href= "http://wanderluxe.theluxenomad.com" target="_blank"
+          h1 Wanderluxe
+        | ASIA PACIFIC'S LEADING TRAVEL AND LIFESTYLE MAGAZINE
+      ul.content-people-say.bxslider.people-say-section
+        - config_wanderluxes.each do |wanderluxe|
+          li
+            .container
+              a href= "#{wanderluxe.wanderluxe_url}" target="_blank"
+                = image_tag wanderluxe.get_photo_url, height: 240, width: 370
+                .caption
+                  .caption-text
+                    h1 = wanderluxe.caption
+    .tln-contact-form
+      .columns.large-5.medium-5
+      .columns.large-7.medium-7
+        = form_tag "/contact_us/book_with_us", :id => "contact-form", :class => "form-required" ,'data-abide' => '' do
+          input type="hidden" id="gclid_field" name="gclid_field" value=cookies[:gclid]
+          .row
+            label YOUR NAME *
+            .small-6.columns
+              input#first_name type="text" size="30" name="user[first_name]" placeholder="First Name"required="required" pattern="[a-zA-Z]+" tabindex="6"
+              small.error Please enter a valid first name.
+            .small-6.columns
+              input#last_name type="text" size="30" name="user[last_name]" required="required" pattern="[a-zA-Z]+" placeholder="Last Name" tabindex="7"
+              small.error Please enter a valid last name.
+          .row
+            label CONTACT INFORMATION *
+            .small-6.columns
+              input#user_email_contact type="email" size="30" name="user[email]" required="required" placeholder="Email" value=(current_user.email if current_user.present?) tabindex="8"
+              small.error Please enter a valid email.
+            .small-6.columns
+              input#phone type="text" placeholder="Phone Number" size="30" name="user[phone]"  required="required" tabindex="9"
+              small.error Please enter a valid phone number.
+              
+          .row#antispam-home
+            .small-12.columns
+              input name="user[cell_phone]"
+              input name="cell_phone"
+          .row
+            label TENTATIVE TRAVEL DATES
+            .small-6.columns
+              input#contact_check_in_date type="text" name="user[check_in_date]" placeholder="Arriving" class='range' tabindex="10"
+            .small-6.columns
+              input#contact_check_out_date type="text" name="user[check_out_date]" placeholder="Leaving" class='range' tabindex="11"
+
+          .row
+            label ANYTHING ELSE?
+            input#user_message size="30" name="user[message]" placeholder="Tell us a little bit about what you're looking for and we’ll help you get started." tabindex="12"
+          .row
+            .small-9.columns
+              label.user_copy for="user_copy"
+                input#user_copy type="checkbox" value="1" name="user[copy]" tabindex="13"
+                span Yes, I want to subscribe to The Luxe Nomad’s newsletter to receive the latest deals & promotions.
+            .small-2.columns.right
+              input type="submit" value="Submit" name="commit" id="user_submit" class="button yellow" tabindex="14"
+
+javascript:
+  $(document).ready( function () {
+    // $( "#tabs" ).tabs();
+    var width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth,
+      accordion = $('.tln-accordion-custom'),
+      is_clicked = false,
+      $nomad_picks_slider = $(".content-nomad-picks");
+
+    $(window).resize( function () {
+      var _width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+
+      if (_width <= 640) {
+        accordion.addClass('accordion');
+      } else {
+        accordion.removeClass('accordion');
+      }
+    });
+
+    $('.content-people-say.bxslider').bxSlider({
+      pager: false,
+      maxSlides: 3,
+      slideWidth: 385,
+      slideMargin: 0,
+      speed: 1000,
+      auto: true,
+      autoHover: true
+    });
+
+    $(document).foundation();
+    $(document).foundation('tab', 'reflow');
+
+    $("#contact-form").on('submit', function(ev) {
+      ev.preventDefault();
+
+      if (is_clicked || $(".small-6.columns").hasClass('error')) {
+        return;
+      }
+
+      is_clicked = true;
+
+      var posting = $.post("/contact_us/book_with_us", $(this).serialize());
+
+
+      posting.success(function(resp) {
+        if (resp.status == 200) {
+          $("#contact-us-modal").foundation("reveal", "open");
+          $("#contact-us-modal .wrapper").addClass("success");
+          setTimeout(function() {
+            $("#contact-us-modal").foundation("reveal", "close");
+          }, 3000);
+        } else {
+          alert(resp.message);
+        }
+        is_clicked = false;
+      }).fail(function(resp) {
+        is_clicked = false;
+        console.log("fail", resp);
+      });
+    });
+
+    $('.button-load-more').on('click', function() {
+      var $this = $(this),
+        text = $this.text();
+      text = text.indexOf("Show More") >= 0 ? "Show Less &laquo;" : "Show More &raquo";
+
+      $this.html(text);
+      $('.content.active > .content-nomad-picks .load-more').slideToggle(500);
+    });
+  });

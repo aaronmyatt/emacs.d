@@ -1,0 +1,186 @@
+class HomeController < ApplicationController
+  def index
+    current_flash_sales = FlashSale.current.published.only_with_hotel.has_room.latest
+    most_popular_hotels = FeaturedHotel.published.hot_hotel.order_by(position: :asc)
+    last_minute_hotels = FeaturedHotel.published.last_minute.order_by(position: :asc)
+    tln_new_hotels = FeaturedHotel.published.tln_new.order_by(position: :asc)
+    configurations = AdminConfiguration.first
+    _configurations = []
+    if configurations
+      configurations.configuration_contents.each_with_index do |content, index|
+        image = configurations.configuration_photos[index].get_photo_url if configurations.configuration_photos[index]
+        _configurations << {
+          photo: image,
+          text: content.mid_text,
+          description: content.description
+        }
+      end
+    end
+    if device_type == :mobile
+      cookies[:check_in_date] = (14.days.from_now).strftime('%Y-%m-%d').to_date
+      cookies[:check_out_date] = (17.days.from_now).strftime('%Y-%m-%d').to_date
+    end
+    render :index, :locals => {
+        current_flash_sales: current_flash_sales,
+        most_popular_hotels: most_popular_hotels,
+        last_minute_hotels: last_minute_hotels,
+        tln_new_hotels: tln_new_hotels,
+        configurations: _configurations,
+        config_wanderluxes: configurations.configuration_wanders
+      }
+  end
+
+  def about_pre
+    render :layout => "special"
+  end
+
+  def privacy
+  end
+
+  def contact
+
+  end
+
+  def contact_us
+  end
+
+  def send_mail
+    if params[:user][:name].present? && params[:user][:email].present?
+      if ENV["USING_DELAYED"] == "1"
+        UserMailer.delay.contact_message(params[:user][:email], params[:user][:name], params[:user][:subject], params[:user][:message], params[:gclid_field])
+        if params[:user][:copy] == "1"
+          UserMailer.delay.contact_message_copy(params[:user][:email], params[:user][:name], params[:user][:subject], params[:user][:message])
+        end
+      else
+        UserMailer.contact_message(params[:user][:email], params[:user][:name], params[:user][:subject], params[:user][:message], params[:gclid_field]).deliver
+        if params[:user][:copy] == "1"
+          UserMailer.contact_message_copy(params[:user][:email], params[:user][:name], params[:user][:subject], params[:user][:message]).deliver
+        end
+      end
+      flash[:notice] = "Thank you! We have received your message."
+       redirect_to "/contact"
+    else
+      # flash[:error] = "Please provide your first name and last name."
+       redirect_to "/contact"
+    end
+  end
+
+  def contributor_detail
+    @contributor = Contributor.find(params[:id])
+  end
+
+  def contributors
+  end
+
+  def booking_terms
+    render layout: false if params[:layout] == 'false'
+  end
+
+  def cancellation_policy
+    # Get overriding flash sales policy if any
+    if params[:origin] == 'flash_sales'
+      @cancellation_policy = "Non-refundable & no cancellation allowed.".html_safe
+    else
+      # Get overriding promotional policy if any
+      if params[:room_id].present? && params[:promotion_id].present?
+        room = Room.find(params[:room_id])
+        promotion = room.room_promotions.find(params[:promotion_id])
+        if promotion
+          @cancellation_policy = promotion.cancellation_policy_text
+        elsif room.cancellation_policy
+          @cancellation_policy = room.cancellation_policy_text
+        end
+      else
+        hotel = Hotel.find(params[:id])
+        check_in_date = params[:check_in_date].to_time
+        @cancellation_policy = hotel.cancellation_policy_text(check_in_date)
+      end
+    end
+
+    render :layout => false
+  end
+
+  def help_mail
+    unless params[:help]
+      flash[:error] = "Invalid form data."
+      render :help
+      return
+    end
+
+    if params[:help][:email].blank?
+      flash[:error] = "Please provide email address."
+      render :help
+      return
+    end
+
+    if params[:help][:message].blank?
+      flash[:error] = "Message cannot be empty."
+      render :help
+      return
+    end
+    if ENV["USING_DELAYED"] == "1"
+      UserMailer.delay.help(params[:help][:name], params[:help][:email], params[:help][:subject], params[:help][:message])
+      if params[:help][:copy] == "1"
+        UserMailer.delay.help_copy(params[:help][:name], params[:help][:email], params[:help][:subject], params[:help][:message])
+      end
+    else
+      UserMailer.help(params[:help][:name], params[:help][:email], params[:help][:subject], params[:help][:message]).deliver
+      if params[:help][:copy] == "1"
+        UserMailer.help_copy(params[:help][:name], params[:help][:email], params[:help][:subject], params[:help][:message]).deliver
+      end
+    end
+    flash[:notice] = "We have received your message."
+    redirect_to "/help"
+  end
+
+  def send_affiliate_form
+    contact = {}
+
+    contact[:name] = "#{params[:first_name]} #{params[:last_name]}"
+    contact[:url] = params[:url]
+    contact[:web_name] = params[:web_name]
+    contact[:email] = params[:email]
+    contact[:other_info] = params[:other_info]
+
+    if ENV["USING_DELAYED"] == "1"
+      UserMailer.delay.send_affiliate_page_contact(contact)
+    else
+      UserMailer.send_affiliate_page_contact(contact).deliver
+    end
+    redirect_to "/affiliates/thanks"
+  end
+
+  def send_gift_form
+    contact = {}
+
+    contact[:name] = "#{params[:first_name]} #{params[:last_name]}"
+    contact[:denomination] = params[:denomination]
+    contact[:email] = params[:email]
+    contact[:other_info] = params[:other_info]
+
+    if ENV["USING_DELAYED"] == "1"
+      UserMailer.delay.send_gift_page_contact(contact)
+    else
+      UserMailer.send_gift_page_contact(contact).deliver
+    end
+    redirect_to "/gift/thanks"
+  end
+
+  def robots
+    temp_text = ''
+    temp_text << "User-agent: *"
+    temp_text << "\r\n"
+    temp_text << "Disallow: /images"
+    temp_text << "\r\n"
+    temp_text << "Disallow: /assets"
+    temp_text << "\r\n"
+
+
+    robots = File.open(Rails.root + "config/robots.txt", "w")
+
+    robots.write(temp_text)
+    robots.close
+    robots = File.read(Rails.root + "config/robots.txt")
+    render :text => robots, :layout => false, :content_type => "text/plain"
+  end
+end

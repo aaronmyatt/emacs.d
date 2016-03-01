@@ -1,0 +1,40 @@
+(function() {
+  'use strict';
+  angular
+    .module("fb.auth.module", ["ngCordovaOauth"])
+    .service("fbService", fbService);
+
+  fbService.$inject = ["$log", "$cordovaOauth", "$ionicLoading"];
+  function fbService($log, $cordovaOauth, $ionicLoading) {
+    // fbService
+    // ------------
+
+    // Usage
+    // Add `fb.auth.module` to your modules dependencies. The `$inject` the `fbService` wherever necessary.
+    // Assuming you have the `ngCordovaOAuth` library downloaded and added to your `index.html`, aswell as the
+    // InAppBrowser plugin: `cordova plugin add cordova-plugin-inappbrowser` You are good to go.
+
+    var service = this;
+    service.fb_login = fb_login;
+    return service;
+
+    ////////////////
+    function fb_login(){
+
+      $cordovaOauth.facebook("1726215150926976", ["email"]).then(function(res)
+        {
+          $ionicLoading.show({template:'<input value="'+res.access_token+'">'});
+          delete $http.defaults.headers.common.Authorization;
+          //$rootScope.token = "";
+          $log.info(res);
+
+        }, function(error) {
+          $ionicLoading.hide();
+          $log.error(error);
+
+        });
+
+      //$ionicLoading.hide();
+    }
+  }
+})();

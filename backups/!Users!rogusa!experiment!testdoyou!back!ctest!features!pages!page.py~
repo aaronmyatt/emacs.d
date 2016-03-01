@@ -1,0 +1,33 @@
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.common.exceptions import TimeoutException
+from base64 import decodestring
+from datetime import datetime
+
+
+class Page(object):
+
+    def __init__(self, driver, base_url="", wait_time=10):
+        self.driver = driver
+        self.base_url = base_url
+        self.wait_time = wait_time
+
+
+class Element(object):
+
+    def __init__(self, locator):
+        self.locator = locator
+
+    def __get__(self, obj, owner):
+        driver = obj.driver
+        wait_time = obj.wait_time
+        try:
+            return WebDriverWait(driver, wait_time).until(
+                EC.visibility_of_element_located(self.locator))
+        except TimeoutException as t:
+            filename = "error_%s.jpg" % (str(datetime.now()))
+            with open(filename, "wb") as f:
+                f.write(decodestring(t.screen))
+            raise TimeoutException(
+                "Timeout finding element. Screen shot saved as %s" % (filename))

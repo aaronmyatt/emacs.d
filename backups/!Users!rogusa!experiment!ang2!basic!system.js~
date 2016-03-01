@@ -1,0 +1,3 @@
+<label>Name:</label>
+<!-- data-bind to the input element; store value in yourName -->
+<input type="text" [(ngModel)]="yourName" placeholder="Enter a name here">

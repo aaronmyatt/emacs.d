@@ -1,0 +1,18 @@
+from ../pages.home-po import HomePage
+
+
+@given(u'I am an unauthenticed user')
+def step_impl(context):
+    raise NotImplementedError(u'STEP: Given I am an unauthenticed user')
+
+@when(u'I visit the home page at "/"')
+def step_impl(context):
+    raise NotImplementedError(u'STEP: When I visit the home page at "/"')
+
+@when(u'I click the profile button')
+def step_impl(context):
+    raise NotImplementedError(u'STEP: When I click the profile button')
+
+@then(u'I should be redirected to the homepage')
+def step_impl(context):
+    raise NotImplementedError(u'STEP: Then I should be redirected to the homepage')
