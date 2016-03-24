@@ -1,3 +1,0 @@
-(global-set-key (kbd "C-e") 'forward-sentence)
-
-(provide 'key-bindings)

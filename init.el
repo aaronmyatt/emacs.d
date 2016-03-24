@@ -77,7 +77,10 @@
      ido-at-point
      ido-ubiquitous
      js2-mode
+     scss-mode
      smartparens
+     crosshairs
+     smex
      )))
 
 (condition-case nil
@@ -107,3 +110,6 @@
 (eval-after-load 'magit '(require 'setup-magit))
 (eval-after-load 'grep '(require 'setup-rgrep))
 
+;; Smart M-x is smart
+(require 'smex)
+(smex-initialize)

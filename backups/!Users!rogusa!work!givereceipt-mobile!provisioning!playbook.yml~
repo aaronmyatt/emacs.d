@@ -1,9 +1,0 @@
----
-- hosts: gr
-
-  gather_facts: yes
-  
-  roles:
-    - geerlingguy.nodejs
-    - martinmicunda.ionic
-...
