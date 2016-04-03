@@ -71,6 +71,8 @@
      typescript-mode
      markdown-mode
      guide-key
+     flycheck
+     flycheck-pos-tip
      flx-ido
      flx
      f
@@ -81,6 +83,7 @@
      smartparens
      crosshairs
      smex
+     yasnippet
      )))
 
 (condition-case nil
@@ -109,6 +112,33 @@
 (eval-after-load 'dired '(require 'setup-dired))
 (eval-after-load 'magit '(require 'setup-magit))
 (eval-after-load 'grep '(require 'setup-rgrep))
+(require 'setup-yasnippet)
+
+
+;; Default setup of smartparens
+(require 'smartparens-config)
+(setq sp-autoescape-string-quote nil)
+(--each '(css-mode-hook
+          restclient-mode-hook
+          js-mode-hook
+          java-mode
+          ruby-mode
+          markdown-mode
+          groovy-mode
+          scala-mode)
+  (add-hook it 'turn-on-smartparens-mode))
+
+;; Language specific setup files
+(eval-after-load 'js2-mode '(require 'setup-js2-mode))
+(eval-after-load 'ruby-mode '(require 'setup-ruby-mode))
+;; (eval-after-load 'markdown-mode '(require 'setup-markdown-mode))
+
+;; Load stuff on demand
+(autoload 'auto-complete-mode "auto-complete" nil t)
+(eval-after-load 'flycheck '(require 'setup-flycheck))
+
+;; Map files to modes
+(require 'mode-mappings)
 
 ;; Smart M-x is smart
 (require 'smex)
@@ -119,4 +149,3 @@
 (add-to-list 'auto-mode-alist '("\\.erb\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.mustache\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.html?\\'" . web-mode))
-

@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: repn
+# key: repn
+# --
+redirect_to ${1:path}, :notice => "${2:notice}"$0
