@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: prp
+# key: prp
+# --
+params.require(${1:model}).permit(${2::fields})$0

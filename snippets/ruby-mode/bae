@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: bae
+# key: bae
+# --
+before_action :${1:function}, :except => [${2:actions}]

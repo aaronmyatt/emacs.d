@@ -1,0 +1,25 @@
+# -*- mode: snippet -*-
+# name: %ff
+# key: %ff
+# --
+<%= form_for @$1 do |f| %>
+<% if @$1.errors.any? %>
+<div class="error_messages">
+  <h2>Form is invalid</h2>
+  <ul>
+    <% for message in @$1.errors.full_messages %>
+    <li><%=message %></li>
+    <% end %>
+  </ul>
+</div>
+<% end %>
+
+<p>
+  <%= f.label :${2:field} %> <br />
+  <%= f.text_field :$2 %>
+</p>
+
+$0
+
+<p class="button"> <%= f.submit %> </p>
+<% end %>
