@@ -84,6 +84,9 @@
      crosshairs
      smex
      yasnippet
+     fullframe
+     discover
+     eldoc-mode
      )))
 
 (condition-case nil
@@ -112,6 +115,7 @@
 (eval-after-load 'dired '(require 'setup-dired))
 (eval-after-load 'magit '(require 'setup-magit))
 (eval-after-load 'grep '(require 'setup-rgrep))
+(require 'setup-hippie)
 (require 'setup-yasnippet)
 
 
@@ -153,3 +157,24 @@
 ;; find in repo
 (global-set-key (kbd "C-x f") 'find-file-in-repository)
 
+(global-auto-revert-mode 1)
+(setq-default line-spacing 1)
+(show-paren-mode 1)
+(setq mac-command-modifier ‘meta)
+(setq ns-use-srgb-colorspace t)
+(setq linum-format "%4d ")
+(setq split-height-threshold 0)
+(setq split-width-threshold nil)
+
+;; Store all backup and autosave files in the tmp dir
+(setq backup-directory-alist
+      `((".*" . ,temporary-file-directory)))
+(setq auto-save-file-name-transforms
+      `((".*" ,temporary-file-directory t)))
+
+
+(require 'fullframe)
+(fullframe magit-status magit-mode-quit-window nil)
+
+(require 'discover)
+(global-discover-mode 1)

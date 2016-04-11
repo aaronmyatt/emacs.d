@@ -52,4 +52,7 @@
      (define-key wdired-mode-map (vector 'remap 'beginning-of-buffer) 'dired-back-to-top)
      (define-key wdired-mode-map (vector 'remap 'end-of-buffer) 'dired-jump-to-bottom)))
 
+(setq global-auto-revert-non-file-buffers t)
+(setq auto-revert-verbose nil)
+
 (provide 'setup-dired)

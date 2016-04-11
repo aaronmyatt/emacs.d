@@ -29,4 +29,6 @@
 (require 'rinari)
 (global-rinari-mode)
 
+(add-hook 'ruby-mode-hook 'eldoc-mode)
+
 (provide 'setup-ruby-mode)
