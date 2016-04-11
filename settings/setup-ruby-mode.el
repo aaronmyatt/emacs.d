@@ -25,4 +25,8 @@
 
 (define-key ruby-mode-map (kbd "C-c t") 'ruby-jump-to-other)
 
+(add-hook 'ruby-mode-hook 'robe-mode)
+(require 'rinari)
+(global-rinari-mode)
+
 (provide 'setup-ruby-mode)
