@@ -1,4 +1,4 @@
-;; Turn off mouse interface early in startup to avoid momentary display
+;; Turn off mouse interface early in startup to avoid momentary displayb
 (if (fboundp 'menu-bar-mode) (menu-bar-mode -1))
 (if (fboundp 'tool-bar-mode) (tool-bar-mode -1))
 (if (fboundp 'scroll-bar-mode) (scroll-bar-mode -1))
@@ -86,7 +86,8 @@
      yasnippet
      fullframe
      discover
-     eldoc-mode
+     s
+     fold-this
      )))
 
 (condition-case nil
@@ -154,13 +155,9 @@
 (add-to-list 'auto-mode-alist '("\\.mustache\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.html?\\'" . web-mode))
 
-;; find in repo
-(global-set-key (kbd "C-x f") 'find-file-in-repository)
-
 (global-auto-revert-mode 1)
 (setq-default line-spacing 1)
 (show-paren-mode 1)
-(setq mac-command-modifier ‘meta)
 (setq ns-use-srgb-colorspace t)
 (setq linum-format "%4d ")
 (setq split-height-threshold 0)
@@ -178,3 +175,12 @@
 
 (require 'discover)
 (global-discover-mode 1)
+
+;; Emacs server
+(require 'server)
+(unless (server-running-p)
+  (server-start))
+
+(require 'key-bindings)
+
+

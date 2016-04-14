@@ -1,5 +1,7 @@
-#name : render :inline => " ... ", :type => : ... )
-#group: Rails render
+# -*- mode: snippet -*-
+# name: rit
 # key: rit
 # --
-render :inline => "${<%= 'hello' %>}", :type => :${rxml})
+it "$1" do 
+   $0
+end

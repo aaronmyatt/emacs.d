@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: rscen
+# key: rscen
+# --
+scenario "$1" do
+$0
+end
