@@ -1,16 +1,39 @@
 
 ;; ----- smex-history -----
 (
+ js2-mode
  eval-buffer
- cd
- 5x5
- arp
- dbx
- dig
- erc
+ prettify-symbols-mode
+ package-install
+ yas-reload-all
+ yas-tryout-snippet
+ yas-new-snippet
 )
 
 ;; ----- smex-data -----
 (
- (eval-buffer . 2)
+ (eval-buffer . 14)
+ (rails-log-show-test . 1)
+ (shell . 1)
+ (revert-buffer . 1)
+ (magit-log . 1)
+ (magit-status . 7)
+ (magit-branch . 1)
+ (package-install . 5)
+ (emmet-mode . 2)
+ (emmet-prev-edit-point . 1)
+ (yas-about . 1)
+ (yas-describe-tables . 1)
+ (package-list-packages . 1)
+ (rgrep . 9)
+ (php-mode . 2)
+ (sh-mode . 1)
+ (org-mode . 1)
+ (yas-new-snippet . 1)
+ (yas-tryout-snippet . 1)
+ (yas-reload-all . 1)
+ (org-md-export-as-markdown . 1)
+ (markdown-preview . 2)
+ (js2-mode . 3)
+ (prettify-symbols-mode . 1)
 )

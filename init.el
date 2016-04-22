@@ -53,6 +53,9 @@
 ;; Setup packages
 (require 'setup-packages)
 
+;; display “lambda” as “λ”
+(global-prettify-symbols-mode 1)
+
 ;; Install extensions if they're missing
 (defun init--install-packages ()
   (packages-install

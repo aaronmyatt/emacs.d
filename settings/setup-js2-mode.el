@@ -1,4 +1,4 @@
-;;; setup-js2-mode.el --- tweak js2 settings -*- lexical-binding: t; -*-
+;; ;;; setup-js2-mode.el --- tweak js2 settings -*- lexical-binding: t; -*-
 
 (setq-default js2-allow-rhino-new-expr-initializer nil)
 (setq-default js2-auto-indent-p nil)
@@ -27,15 +27,15 @@
 (require 'js2-imenu-extras)
 (js2-imenu-extras-setup)
 
-;; Set up wrapping of pairs, with the possiblity of semicolons thrown into the mix
+;; ;; Set up wrapping of pairs, with the possiblity of semicolons thrown into the mix
 
 (defun js2r--setup-wrapping-pair (open close)
-  (define-key js2-mode-map (read-kbd-macro open) (λ (js2r--self-insert-wrapping open close)))
+  (define-key js2-mode-map (read-kbd-macro open) (lambda (js2r--self-insert-wrapping open close)))
   (unless (s-equals? open close)
-    (define-key js2-mode-map (read-kbd-macro close) (λ (js2r--self-insert-closing open close)))))
+    (define-key js2-mode-map (read-kbd-macro close) (lambda (js2r--self-insert-closing open close)))))
 
 (define-key js2-mode-map (kbd ";")
-  (λ (if (looking-at ";")
+  (lambda (if (looking-at ";")
          (forward-char)
        (funcall 'self-insert-command 1))))
 
@@ -154,22 +154,22 @@
 
 (define-key js2-mode-map (kbd "C-k") 'js2r-kill)
 
-(define-key js2-mode-map (kbd "M-j") (λ (join-line -1)))
+(define-key js2-mode-map (kbd "M-j") (lambda (join-line -1)))
 
-(comment ;; avoid confusing shorthands
- ;; Use lambda for anonymous functions
- (font-lock-add-keywords
-  'js2-mode `(("\\(function\\) *("
-               (0 (progn (compose-region (match-beginning 1)
-                                         (match-end 1) "\u0192")
-                         nil)))))
+;; (comment ;; avoid confusing shorthands
+;;  ;; Use lambda for anonymous functions
+;;  (font-lock-add-keywords
+;;   'js2-mode `(("\\(function\\) *("
+;;                (0 (progn (compose-region (match-beginning 1)
+;;                                          (match-end 1) "\u0192")
+;;                          nil)))))
 
- ;; Use right arrow for return in one-line functions
- (font-lock-add-keywords
-  'js2-mode `(("function *([^)]*) *{ *\\(return\\) "
-               (0 (progn (compose-region (match-beginning 1)
-                                         (match-end 1) "\u2190")
-                         nil))))))
+;;  ;; Use right arrow for return in one-line functions
+;;  (font-lock-add-keywords
+;;   'js2-mode `(("function *([^)]*) *{ *\\(return\\) "
+;;                (0 (progn (compose-region (match-beginning 1)
+;;                                          (match-end 1) "\u2190")
+;;                          nil))))))
 
 ;; After js2 has parsed a js file, we look for jslint globals decl comment ("/* global Fred, _, Harry */") and
 ;; add any symbols to a buffer-local var of acceptable global vars
