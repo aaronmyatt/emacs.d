@@ -1,39 +1,24 @@
 
 ;; ----- smex-history -----
 (
- js2-mode
- eval-buffer
- prettify-symbols-mode
- package-install
- yas-reload-all
- yas-tryout-snippet
- yas-new-snippet
+ rgrep
+ org-list-insert-radio-list
+ org-toggle-inline-images
+ org-toggle-pretty-entities
+ org-open-at-point
+ org-open-line
+ plantuml-render-region
 )
 
 ;; ----- smex-data -----
 (
- (eval-buffer . 14)
+ (eval-buffer . 4)
  (rails-log-show-test . 1)
- (shell . 1)
- (revert-buffer . 1)
- (magit-log . 1)
- (magit-status . 7)
- (magit-branch . 1)
- (package-install . 5)
- (emmet-mode . 2)
- (emmet-prev-edit-point . 1)
- (yas-about . 1)
- (yas-describe-tables . 1)
- (package-list-packages . 1)
- (rgrep . 9)
- (php-mode . 2)
- (sh-mode . 1)
- (org-mode . 1)
- (yas-new-snippet . 1)
- (yas-tryout-snippet . 1)
- (yas-reload-all . 1)
- (org-md-export-as-markdown . 1)
- (markdown-preview . 2)
- (js2-mode . 3)
- (prettify-symbols-mode . 1)
+ (plantuml-render-region . 1)
+ (org-open-line . 1)
+ (org-open-at-point . 1)
+ (org-toggle-pretty-entities . 1)
+ (org-toggle-inline-images . 2)
+ (org-list-insert-radio-list . 1)
+ (rgrep . 1)
 )

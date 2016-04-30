@@ -91,6 +91,7 @@
      discover
      s
      fold-this
+     use-package
      )))
 
 (condition-case nil
@@ -183,6 +184,23 @@
 (require 'server)
 (unless (server-running-p)
   (server-start))
+
+(use-package org
+  :config
+  (org-babel-do-load-languages
+   'org-babel-load-languages
+   '((sh         . t)
+     (js         . t)
+     (emacs-lisp . t)
+     (clojure    . t)
+     (python     . t)
+     (ruby       . t)
+     (dot        . t)
+     (css        . t)
+     (plantuml   . t))))
+
+(setq org-plantuml-jar-path
+      (expand-file-name "/usr/local/Cellar/plantuml/8037/plantuml.8037.jar"))
 
 (require 'key-bindings)
 
